@@ -1,0 +1,17 @@
+{
+  "header": {
+    "profile": "profile",
+    "work": "work experience",
+    "education": "education",
+    "tech": "technologies",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "hero": {
+    "title": "I am a creative frontend developer"
+  },
+  "footer": {
+    "en": "en",
+    "da": "da"
+  }
+}

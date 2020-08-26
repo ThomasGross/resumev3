@@ -1,0 +1,8 @@
+$z-map: (
+	heroTitleText: 1,
+	heroIcons: 2
+);
+
+@function z($name) {
+	@return map-get($z-map, $name);
+}

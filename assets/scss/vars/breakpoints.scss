@@ -1,0 +1,27 @@
+$bp-desktop-xl: '>=1700px';
+$bp-desktop-lg: '>=1600px';
+$bp-desktop: '>=1400px';
+$bp-desktop-sm: '<=1399px';
+
+$bp-tablet-pre: '<=1100px';
+$bp-tablet: '<=1024px';
+$bp-tablet-ab: '>=1025px'; // above
+$bp-tablet-sm: '<=949px';
+$bp-tablet-sm-ab: '>=950px'; // above
+$bp-tablet-lg: '<=1024px';
+$bp-tablet-min: '<=949px';
+
+$bp-phablet-lg: '<=850px';
+$bp-phablet: '<=767px';
+
+$bp-mobile: '<=719px';
+$bp-mobile-sm: '<=567px';
+$bp-mobile-ab: '>=720px'; // above
+$bp-mobile-mini: '<=480px';
+$bp-mobile-tiny: '<=320px';
+
+// TO ADD A MEDIAQUERY ADD THE FOLLOWING TO YOUR SASS FILE:
+// 
+// @include media($bp-mobile) {
+//   your scss modifications
+// }

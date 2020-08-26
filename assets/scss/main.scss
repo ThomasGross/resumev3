@@ -1,0 +1,105 @@
+@import "./reset.scss";
+
+// Custom styles
+body {
+  font-family: $font-primary;
+  color: $color-white;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #c9c9c9;
+  margin: 20px 0 0px;
+  width: 100%;
+  height: 1px;
+}
+
+h1 {
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 72px;
+  margin-bottom: 60px;
+  color: $color-black;
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: $color-grey;
+}
+
+h3 {
+  font-family: $font-primary;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: $color-grey;
+}
+
+h4 {
+  font-family: $font-roboto;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: 18px;
+  line-height: 32px;
+
+  &.small {
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  span {
+    &.bold {
+      font-weight: bold;
+    }
+  }
+}
+
+a {
+  font-family: $font-primary;
+  cursor: pointer;
+  text-decoration: none;
+
+  &.link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: $color-red;
+  }
+}
+
+.label {
+  margin-bottom: 5px;
+  font-family: $font-secondary;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--big {
+    font-size: 12px;
+    letter-spacing: 2, 4px;
+  }
+}
+
+textarea {
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  &:focus {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+}
