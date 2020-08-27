@@ -10,6 +10,10 @@
   "hero": {
     "title": "I am a creative frontend developer"
   },
+  "profile": {
+    "title": "profile",
+    "block": "<p> I am a creative and detail oriented front-end developer with experience within back-end and design. I focus on the visual part of web development and enjoy being part of the creative process. </p> <p> I am a problem solver with a specific interest in the process from idea to the final product with a mission to always find the best solutions. </p> <p> I am a perfectionist and therefore always work to improve and optimize the quality of my work. </p> <p> My ambition is to work with a company that is interested in strengthening the competences of its employees and that prioritizes social networking, humor and cooperation. </p>"
+  },
   "footer": {
     "en": "en",
     "da": "da"

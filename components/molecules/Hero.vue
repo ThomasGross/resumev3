@@ -33,9 +33,7 @@
 
         <div class="box__text-group">
           <kinesis-element :strength="5">
-            <div class="box__text-group__text">
-              {{ $t("hero.title") }}
-            </div>
+            <div class="box__text-group__text">{{ $t("hero.title") }}</div>
           </kinesis-element>
           <div
             class="box__text-group__text title box__text-group__text--color-reverse"
@@ -43,9 +41,7 @@
             <p class="gradient-text">{{ $t("hero.title") }}</p>
           </div>
           <kinesis-element :strength="5">
-            <div class="box__text-group__text">
-              {{ $t("hero.title") }}
-            </div>
+            <div class="box__text-group__text">{{ $t("hero.title") }}</div>
           </kinesis-element>
         </div>
       </div>
@@ -70,6 +66,7 @@ export default {
 <style lang="scss" scoped>
 .Hero {
   position: relative;
+  min-height: 600px;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -85,15 +82,15 @@ export default {
       white-space: nowrap;
       font-family: $font-primary;
       line-height: 85px;
-      color: white;
+      color: var(--color);
       font-size: 120px;
-      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-        1px 1px 0 black;
+      text-shadow: -1px -1px 0 var(--bg), 1px -1px 0 var(--bg),
+        -1px 1px 0 var(--bg), 1px 1px 0 var(--bg);
 
       &--color-reverse {
-        color: black;
-        text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-          1px 1px 0 white;
+        color: var(--bg);
+        text-shadow: -1px -1px 0 var(--color), 1px -1px 0 var(--color),
+          -1px 1px 0 var(--color), 1px 1px 0 $color;
       }
     }
   }
@@ -106,7 +103,7 @@ export default {
   .box {
     width: 50vw;
     height: 200px;
-    background: white;
+    background: var(--color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -132,7 +129,7 @@ export default {
         white-space: nowrap;
         font-family: $font-primary;
         line-height: 85px;
-        color: black;
+        color: var(--bg);
         font-size: 120px;
         // text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         //   1px 1px 0 white;
@@ -154,14 +151,14 @@ export default {
           p {
             font-family: $font-primary;
             line-height: 20px;
-            color: white;
+            color: var(--color);
             letter-spacing: 5px;
             margin: 0 30px;
           }
         }
 
         &--color-reverse {
-          color: black;
+          color: var(--bg);
           // text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
           //   1px 1px 0 white;
         }

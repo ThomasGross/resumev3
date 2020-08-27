@@ -1,23 +1,111 @@
 @font-face {
-  font-family: "Soulcraft-Regular";
-  src: url("/fonts/Soulcraft-Regular.svg#Soulcraft-Regular") format("svg"),
-    url("/fonts/Soulcraft-Regular.ttf") format("truetype"),
-    url("/fonts/Soulcraft-Regular.woff") format("woff");
+  font-family: "Soulcraft";
+  src: url("/fonts/Soulcraft.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-boldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-lightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-mediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat-regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SangoUppercase-Static";
+  src: url("/fonts/Soulcraft.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Roag";
+  src: url("/fonts/Roag-Light.eot");
+  src: url("/fonts/Roag-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Roag-Light.svg#Roag-Light") format("svg"),
+    url("/fonts/Roag-Light.ttf") format("truetype"),
+    url("/fonts/Roag-Light.woff") format("woff"),
+    url("/fonts/Roag-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Soulcraft";
-  src: url("/fonts/Soulcraft.eot");
-  src: url("/fonts/Soulcraft.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Soulcraft.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "Roag";
+  src: url("/fonts/Roag-Bold.eot");
+  src: url("/fonts/Roag-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Roag-Bold.svg#Roag-Bold") format("svg"),
+    url("/fonts/Roag-Bold.ttf") format("truetype"),
+    url("/fonts/Roag-Bold.woff") format("woff"),
+    url("/fonts/Roag-Bold.woff2") format("woff2");
+  font-weight: bold;
   font-style: normal;
 }
 
-$font-roboto: "Roboto", "sans-serif";
+@font-face {
+  font-family: "Roag";
+  src: url("/fonts/Roag-ExtraBoldItalic.eot");
+  src: url("/fonts/Roag-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Roag-ExtraBoldItalic.svg#Roag-ExtraBoldItalic") format("svg"),
+    url("/fonts/Roag-ExtraBoldItalic.ttf") format("truetype"),
+    url("/fonts/Roag-ExtraBoldItalic.woff") format("woff"),
+    url("/fonts/Roag-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: bolder;
+  font-style: italic;
+}
+
+$font-sango: "SangoUppercase-Static";
 $font-soul-craft: "Soulcraft";
 
+$font-montserrat: "montserrat", "sans-serif";
+$font-monument: "MonumentExtended", "sans-serif";
+
+$font-roag: "Roag";
+
+$font-roboto: "Roboto", "sans-serif";
+$font-lato: "Lato", "sans-serif";
+$font-poppins: "Poppins", "sans-serif";
+
+$font-open-sans: "Open Sans";
+
 $font-primary: $font-soul-craft;
-$font-secondary: $font-roboto;
+$font-secondary: $font-montserrat;

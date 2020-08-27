@@ -6,7 +6,9 @@
         <Hero />
       </section>
     </kinesis-container>
-    <text-image></text-image>
+    <section class="section">
+      <text-image></text-image>
+    </section>
     <Footer />
   </div>
 </template>
@@ -29,16 +31,17 @@ export default {
     Profile,
     Footer,
     ImageTextSection,
-    TextImage
-  }
+    TextImage,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.index {
-  background: black;
-}
-
 .section {
+  margin: 50px 0 0;
+
+  &:first-child {
+    margin: 0;
+  }
 }
 </style>

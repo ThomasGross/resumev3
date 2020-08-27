@@ -1,11 +1,50 @@
-@import "./reset.scss";
+:root {
+  --color: #243746;
+  --color-disabled: #293136;
+  --color-primary: #158876;
+  --color-secondary: #0e2233;
+  --bg: #f3f5f4;
+  --bg-secondary: #fff;
+  --border-color: #ddd;
+}
+
+.dark-mode {
+  --color: #ebf4f1;
+  --color-disabled: #293136;
+  --color-primary: #41b38a;
+  --color-secondary: #fdf9f3;
+  --bg: #091a28;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
+}
+
+.sepia-mode {
+  --color: #433422;
+  --color-disabled: #293136;
+  --color-secondary: #504231;
+  --bg: #f1e7d0;
+  --bg-secondary: #eae0c9;
+  --border-color: #ded0bf;
+}
+
+.black-mode {
+  --color: #ebf4f1;
+  --color-disabled: #293136;
+  --color-primary: #41b38a;
+  --color-secondary: #fdf9f3;
+  --bg: #000;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
+}
 
 // Custom styles
 body {
   font-family: $font-primary;
-  color: $color-white;
-  font-size: 18px;
-  overflow-x: hidden;
+  background-color: var(--bg);
+  color: var(--color);
+  font-size: 16px;
+  font-weight: 200;
+  transition: background-color 0.3s;
 }
 
 hr {
@@ -18,11 +57,17 @@ hr {
 
 h1 {
   font-family: $font-primary;
+  // font-style: italic;
   text-transform: uppercase;
   font-size: 64px;
   line-height: 72px;
-  margin-bottom: 60px;
-  color: $color-black;
+  margin-bottom: 50px;
+
+  &.reverse-color {
+    color: var(--bg);
+    text-shadow: -1px -1px 0 var(--color), 1px -1px 0 var(--color),
+      -1px 1px 0 var(--color), 1px 1px 0 var(--color);
+  }
 }
 
 h2 {
@@ -49,17 +94,7 @@ p {
   font-family: $font-secondary;
   font-size: 18px;
   line-height: 32px;
-
-  &.small {
-    line-height: 24px;
-    font-size: 14px;
-  }
-
-  span {
-    &.bold {
-      font-weight: bold;
-    }
-  }
+  letter-spacing: -1px;
 }
 
 a {

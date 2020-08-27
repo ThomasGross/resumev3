@@ -28,13 +28,29 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          " https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      }
+    ],
     script: []
   },
   /*
    ** Global CSS
    */
-  css: ["~/assets/scss/main.scss"],
+  css: ["~/assets/scss/reset"],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -44,6 +60,7 @@ export default {
     scss: [
       "~/assets/scss/vars/*.scss",
       "~/assets/scss/mixins/*.scss", // use underscore "_" & also file extension ".scss"
+      "~/assets/scss/main.scss",
       "aos/dist/aos.css"
     ]
   },
@@ -65,7 +82,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/style-resources"],
+  buildModules: ["@nuxtjs/style-resources", "@nuxtjs/color-mode"],
   /*
    ** Nuxt.js modules
    */

@@ -1,30 +1,30 @@
 <template>
-  <div class="footer">
-    <div class="social"></div>
-    <div class="lang-select">
-      <NuxtLink
-        :to="$i18n.path('da' + $route.fullPath)"
-        :class="[
-          'lang-select__link',
-          locale === 'da' ? 'lang-select__link--disabled' : ''
-        ]"
-        active-class="none"
-        exact
-      >
-        DA
-      </NuxtLink>
-      /
-      <NuxtLink
-        :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
-        :class="[
-          'lang-select__link',
-          locale === 'en' ? 'lang-select__link--disabled' : ''
-        ]"
-        active-class="none"
-        exact
-      >
-        EN
-      </NuxtLink>
+  <div class="grid">
+    <div class="footer col-desk-12">
+      <div class="social"></div>
+      <div class="lang-select">
+        <NuxtLink
+          :to="$i18n.path('da' + $route.fullPath)"
+          :class="[
+            'lang-select__link',
+            locale === 'da' ? 'lang-select__link--disabled' : ''
+          ]"
+          active-class="none"
+          exact
+          >DA</NuxtLink
+        >
+        <span>/</span>
+        <NuxtLink
+          :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
+          :class="[
+            'lang-select__link',
+            locale === 'en' ? 'lang-select__link--disabled' : ''
+          ]"
+          active-class="none"
+          exact
+          >EN</NuxtLink
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -46,18 +46,31 @@ export default {
 .footer {
   position: fixed;
   bottom: 0;
-  right: 0;
-  width: 100vw;
+  left: 50%;
   padding-bottom: 32px;
   display: flex;
   justify-content: space-between;
+  transform: translateX(-50%);
+  width: $desk-grid-width;
+
+  @include media($bp-tablet) {
+    width: $tab-grid-width;
+  }
+
+  @include media($bp-mobile) {
+    width: $mob-grid-width;
+  }
 
   .lang-select {
-    color: white;
-    margin-right: 32px;
+    display: flex;
+    font-family: $font-secondary;
+    letter-spacing: 11px;
+    font-size: 12px;
+    color: var(--color);
 
     &__link {
-      color: white;
+      font-family: $font-secondary;
+      color: var(--color);
 
       &--disabled {
         color: gray;
