@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     <Header />
     <kinesis-container class="index">
       <section class="section">
@@ -7,7 +7,10 @@
       </section>
     </kinesis-container>
     <section class="section">
-      <text-image></text-image>
+      <text-image-section></text-image-section>
+    </section>
+    <section class="section">
+      <list-section></list-section>
     </section>
     <Footer />
   </div>
@@ -18,8 +21,8 @@ import Hero from "~/components/molecules/Hero";
 import Header from "~/components/molecules/Header";
 import Footer from "~/components/molecules/Footer";
 import Profile from "~/components/molecules/Profile";
-import ImageTextSection from "~/components/molecules/ImageTextSection";
-import TextImage from "~/components/molecules/TextImage";
+import TextImageSection from "~/components/molecules/TextImageSection";
+import ListSection from "~/components/molecules/ListSection";
 
 export default {
   head() {
@@ -30,9 +33,9 @@ export default {
     Header,
     Profile,
     Footer,
-    ImageTextSection,
-    TextImage,
-  },
+    TextImageSection,
+    ListSection
+  }
 };
 </script>
 

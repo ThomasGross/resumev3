@@ -1,48 +1,46 @@
 <template>
-  <div class="grid">
-    <div class="header col-desk-12" ref="header">
-      <div class="header__container">
-        <div class="logo-contianer">
-          <nuxt-link to="/">
-            <div class="link">Thomas</div>
-            <div class="link">Gross</div>
-            <div class="link">Rasmussen</div>
+  <div class="header" ref="header">
+    <div class="header__container">
+      <div class="logo-contianer">
+        <nuxt-link to="/">
+          <div class="link">Thomas</div>
+          <div class="link">Gross</div>
+          <div class="link">Rasmussen</div>
+        </nuxt-link>
+      </div>
+      <div class="nav-menu">
+        <div class="nav-menu__item">
+          <nuxt-link :to="$i18n.path('about')">
+            <div class="link">
+              {{ $t("header.profile") }}
+              <span></span>
+            </div>
           </nuxt-link>
         </div>
-        <div class="nav-menu">
-          <div class="nav-menu__item">
-            <nuxt-link :to="$i18n.path('about')">
-              <div class="link">
-                {{ $t("header.profile") }}
-                <span></span>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="nav-menu__item">
-            <nuxt-link :to="$i18n.path('about')">
-              <div class="link">{{ $t("header.work") }}</div>
-            </nuxt-link>
-          </div>
-          <div class="nav-menu__item">
-            <nuxt-link to="/education">
-              <div class="link">{{ $t("header.education") }}</div>
-            </nuxt-link>
-          </div>
-          <div class="nav-menu__item">
-            <nuxt-link to="/tech">
-              <div class="link">{{ $t("header.tech") }}</div>
-            </nuxt-link>
-          </div>
-          <div class="nav-menu__item">
-            <nuxt-link to="/projects">
-              <div class="link">{{ $t("header.projects") }}</div>
-            </nuxt-link>
-          </div>
-          <div class="nav-menu__item">
-            <nuxt-link to="/contact">
-              <div class="link">{{ $t("header.contact") }}</div>
-            </nuxt-link>
-          </div>
+        <div class="nav-menu__item">
+          <nuxt-link :to="$i18n.path('about')">
+            <div class="link">{{ $t("header.work") }}</div>
+          </nuxt-link>
+        </div>
+        <div class="nav-menu__item">
+          <nuxt-link to="/education">
+            <div class="link">{{ $t("header.education") }}</div>
+          </nuxt-link>
+        </div>
+        <div class="nav-menu__item">
+          <nuxt-link to="/tech">
+            <div class="link">{{ $t("header.tech") }}</div>
+          </nuxt-link>
+        </div>
+        <div class="nav-menu__item">
+          <nuxt-link to="/projects">
+            <div class="link">{{ $t("header.projects") }}</div>
+          </nuxt-link>
+        </div>
+        <div class="nav-menu__item">
+          <nuxt-link to="/contact">
+            <div class="link">{{ $t("header.contact") }}</div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -62,7 +60,7 @@ export default {
 .header {
   top: 0;
   left: 0;
-  width: $desk-grid-width;
+  width: $desk-grid-width-gutter;
   left: 50%;
   z-index: 99999;
   position: fixed;
@@ -71,11 +69,11 @@ export default {
   padding-top: 30px;
 
   @include media($bp-tablet) {
-    width: $tab-grid-width;
+    width: $tab-grid-width-gutter;
   }
 
   @include media($bp-mobile) {
-    width: $mob-grid-width;
+    width: $mob-grid-width-gutter;
   }
 
   &__container {

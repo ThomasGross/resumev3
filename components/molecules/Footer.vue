@@ -1,30 +1,28 @@
 <template>
-  <div class="grid">
-    <div class="footer col-desk-12">
-      <div class="social"></div>
-      <div class="lang-select">
-        <NuxtLink
-          :to="$i18n.path('da' + $route.fullPath)"
-          :class="[
-            'lang-select__link',
-            locale === 'da' ? 'lang-select__link--disabled' : ''
-          ]"
-          active-class="none"
-          exact
-          >DA</NuxtLink
-        >
-        <span>/</span>
-        <NuxtLink
-          :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
-          :class="[
-            'lang-select__link',
-            locale === 'en' ? 'lang-select__link--disabled' : ''
-          ]"
-          active-class="none"
-          exact
-          >EN</NuxtLink
-        >
-      </div>
+  <div class="footer">
+    <div class="social"></div>
+    <div class="lang-select">
+      <NuxtLink
+        :to="$i18n.path('da' + $route.fullPath)"
+        :class="[
+          'lang-select__link',
+          locale === 'da' ? 'lang-select__link--disabled' : ''
+        ]"
+        active-class="none"
+        exact
+        >DA</NuxtLink
+      >
+      <span>/</span>
+      <NuxtLink
+        :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
+        :class="[
+          'lang-select__link',
+          locale === 'en' ? 'lang-select__link--disabled' : ''
+        ]"
+        active-class="none"
+        exact
+        >EN</NuxtLink
+      >
     </div>
   </div>
 </template>
@@ -51,14 +49,14 @@ export default {
   display: flex;
   justify-content: space-between;
   transform: translateX(-50%);
-  width: $desk-grid-width;
+  width: $desk-grid-width-gutter;
 
   @include media($bp-tablet) {
-    width: $tab-grid-width;
+    width: $tab-grid-width-gutter;
   }
 
   @include media($bp-mobile) {
-    width: $mob-grid-width;
+    width: $mob-grid-width-gutter;
   }
 
   .lang-select {
@@ -66,6 +64,7 @@ export default {
     font-family: $font-secondary;
     letter-spacing: 11px;
     font-size: 12px;
+    margin-right: -11px;
     color: var(--color);
 
     &__link {

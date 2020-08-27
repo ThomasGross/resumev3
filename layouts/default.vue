@@ -1,5 +1,5 @@
 <template>
-  <div ref="styles">
+  <div>
     <!-- <ul>
       <li
         v-for="color of colors"
@@ -9,20 +9,22 @@
         {{ color }}
       </li>
     </ul> -->
+    <Grid />
     <Nuxt />
   </div>
 </template>
 
 <script>
 import LogoIcon from "assets/svg/logo.svg";
+import Grid from "~/components/molecules/Grid";
 
 export default {
   data() {
     return {
-      colors: ["system", "light", "dark", "sepia", "black"]
+      colors: ["system", "light", "dark", "sepia", "black", "helena"]
     };
   },
-  components: { LogoIcon },
+  components: { LogoIcon, Grid },
   methods: {
     changeColor() {
       const container = this.$refs.styles;
@@ -42,13 +44,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.styles {
-  font-family: $font-secondary;
-  word-spacing: 1px;
-  box-sizing: border-box;
-  // background: $color-primary;
-  // color: $color-secondary;
-  transition: background 0.3s ease;
-}
-</style>
+<style lang="scss"></style>

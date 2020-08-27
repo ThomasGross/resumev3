@@ -1,21 +1,17 @@
 <template>
   <div class="text-image grid">
-    <div class="col-desk-1" />
-    <div class="text-container col-desk-5">
-      <h1
-        class="text-container__title"
-        data-aos="fade-right"
-        data-aos-duration="500"
-      >
+    <div class="col-desk-1 col-tab-0" />
+    <div class="col-desk-5 col-tab-5">
+      <h1 data-aos="fade-right" data-aos-duration="500">
         {{ $t("profile.title") }}
       </h1>
       <div
-        class="text-container__block"
         data-aos="fade-right"
         data-aos-duration="500"
         v-html="$t('profile.block')"
       ></div>
     </div>
+    <div class="img-container"></div>
   </div>
 </template>
 
@@ -46,15 +42,11 @@ export default {
 p {
   font-size: 16px;
   margin-bottom: 30px;
-}
-</style>
 
-<style lang="scss" scoped>
-.text-image {
-}
-
-.text-container {
-  &__title {
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 </style>
+
+<style lang="scss" scoped></style>

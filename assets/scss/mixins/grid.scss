@@ -9,15 +9,15 @@ $grid-desktop-gutter: 30px;
 $grid-desktop-breakpoint: 1800px;
 
 // tablet grid
-$grid-tablet-columns: 12;
-$grid-tablet-sideMargin: 30px;
-$grid-tablet-gutter: 30px;
+$grid-tablet-columns: 8;
+$grid-tablet-sideMargin: 15px;
+$grid-tablet-gutter: 15px;
 $grid-tablet-breakpoint: 768px;
 
 // mobile grid
 $grid-mobile-columns: 4;
-$grid-mobile-sideMargin: 20px;
-$grid-mobile-gutter: 20px;
+$grid-mobile-sideMargin: 15px;
+$grid-mobile-gutter: 15px;
 $grid-mobile-breakpoint: 320px;
 
 // pixels to % variables
@@ -47,16 +47,20 @@ $mob-gutter: (
     ) * 100%
 );
 
+$desk-grid-width-gutter: ($desk-grid-width - $desk-gutter);
+$tab-grid-width-gutter: ($tab-grid-width - $tab-gutter);
+$mob-grid-width-gutter: ($mob-grid-width - $mob-gutter);
+
 // FUNCTIONS AND MiXINS
-@function col-width($i, $columns) {
-  @return 100% / $columns * $i;
+@function col-width($i, $columns, $gutter) {
+  @return (100% / $columns * $i) - $gutter;
 }
 
 @mixin col-props($i, $columns, $gutter) {
-  box-sizing: border-box;
-  width: col-width($i, $columns);
-  padding-left: $gutter/2;
-  padding-right: $gutter/2;
+  // box-sizing: border-box;
+  width: col-width($i, $columns, $gutter);
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
 }
 
 @mixin columns-loop($name, $columns, $gutter) {
@@ -65,7 +69,7 @@ $mob-gutter: (
       @include col-props($i, $columns, $gutter);
     }
     &-#{$name}-shift-#{$i} {
-      margin-left: col-width($i, $columns);
+      margin-left: col-width($i, $columns, $gutter);
     }
   }
 }
@@ -101,5 +105,21 @@ $mob-gutter: (
   }
   @media screen and (max-width: $grid-mobile-breakpoint) {
     @include columns-loop(mob, $grid-mobile-columns, $mob-gutter);
+  }
+
+  &-tab-0 {
+    @media screen and (max-width: $grid-tablet-breakpoint) {
+      width: 0px;
+      margin: 0 0 0 0;
+      display: none;
+    }
+  }
+
+  &-mob-0 {
+    @media screen and (max-width: $grid-mobile-breakpoint) {
+      width: 0px;
+      margin: 0 0 0 0;
+      display: none;
+    }
   }
 }

@@ -37,6 +37,16 @@
   --border-color: #0d2538;
 }
 
+.helena-mode {
+  --color: pink;
+  --color-disabled: #293136;
+  --color-primary: #41b38a;
+  --color-secondary: #fdf9f3;
+  --bg: green;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
+}
+
 // Custom styles
 body {
   font-family: $font-primary;
