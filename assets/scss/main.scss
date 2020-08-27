@@ -72,6 +72,7 @@ h1 {
   font-size: 64px;
   line-height: 72px;
   margin-bottom: 50px;
+  hyphens: auto;
 
   &.reverse-color {
     color: var(--bg);
@@ -88,10 +89,12 @@ h2 {
 }
 
 h3 {
-  font-family: $font-primary;
-  font-size: 22px;
+  font-family: $font-secondary;
+  font-size: 16px;
   margin-bottom: 20px;
-  color: $color-grey;
+  font-weight: 200;
+  // text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h4 {
@@ -102,9 +105,10 @@ h4 {
 
 p {
   font-family: $font-secondary;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   letter-spacing: -1px;
+  margin-bottom: 30px;
 }
 
 a {

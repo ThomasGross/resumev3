@@ -12,7 +12,90 @@
   },
   "profile": {
     "title": "profile",
-    "block": "<p> I am a creative and detail oriented front-end developer with experience within back-end and design. I focus on the visual part of web development and enjoy being part of the creative process. </p> <p> I am a problem solver with a specific interest in the process from idea to the final product with a mission to always find the best solutions. </p> <p> I am a perfectionist and therefore always work to improve and optimize the quality of my work. </p> <p> My ambition is to work with a company that is interested in strengthening the competences of its employees and that prioritizes social networking, humor and cooperation. </p>"
+    "block": "<p>I am a creative and detail oriented front-end developer with experience within back-end and design. I focus on the visual part of web development and enjoy being part of the creative process.</p><p> I am a problem solver with a specific interest in the process from idea to the final product with a mission to always find the best solutions. </p> <p> I am a perfectionist and therefore always work to improve and optimize the quality of my work. </p><p> My ambition is to work with a company that is interested in strengthening the competences of its employees and that prioritizes social networking, humor and cooperation. </p>"
+  },
+  "work": {
+    "title": "WORK",
+    "job1": {
+      "title": "Front-end developer",
+      "year": "2017-2020",
+      "workplace": "Konform A/S",
+      "description": "Web development – Consultancy work as front-end developer on various projects and companies. Technical experience with Html, Css, Sass, Javascript, Vue.js, React.js, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
+    },
+    "job2": {
+      "title": "Front-end developer (training)",
+      "year": "2017",
+      "workplace": "Konform A/S",
+      "description": "Web development – work as front-end developer, on frivillig.dk Technical experience with Html, Css, Sass, Javascript, Vue.js, React.js, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
+    },
+    "job3": {
+      "title": "IT maintenance",
+      "year": "2016-2017",
+      "workplace": "Koda",
+      "description": "IT maintenance, network, it support and database management – IT support to Koda’s employees, back-up of Koda’s data and ensure security re. databases and servers."
+    },
+    "job4": {
+      "title": "Web developer (training)",
+      "year": "2016",
+      "workplace": "Koda",
+      "description": "Web development, Development of Koda’s homepage and CMS. Technical experience with Html, Css, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
+    },
+    "job5": {
+      "title": "Continuity",
+      "year": "2016-2017",
+      "workplace": "TV3 Sport",
+      "description": "Mastering, clipping and database management of esports material for TV3 Sport channels."
+    }
+  },
+  "education": {
+    "title": "EDUCATION",
+    "item1": {
+      "title": "Webudvikling",
+      "year": "2017-2018",
+      "workplace": "Københavns Erhvervs Akademi"
+    },
+    "item2": {
+      "title": "Softwareudvikling og softwaredesign",
+      "year": "2014-2017",
+      "workplace": "Københavns Erhvervs Akademi"
+    },
+    "item3": {
+      "title": "Naturguide og ranger uddannelse",
+      "year": "2012",
+      "workplace": "Entabeni Nature Guide Training"
+    },
+    "item4": {
+      "title": "STX",
+      "year": "2009-2012",
+      "workplace": "Herlev Gymnasium & Hf"
+    }
+  },
+  "tech": {
+    "title": "Technologies",
+    "col1": {
+      "item1": "Front-end developer",
+      "item2": "Front-end developer",
+      "item3": "Front-end developer",
+      "item4": "Front-end developer",
+      "item5": "Front-end developer"
+    },
+    "col2": {
+      "item1": "Front-end developer",
+      "item2": "Front-end developer",
+      "item3": "Front-end developer",
+      "item4": "Front-end developer",
+      "item5": "Front-end developer"
+    },
+    "col3": {
+      "item1": "Front-end developer",
+      "item2": "Front-end developer",
+      "item3": "Front-end developer",
+      "item4": "Front-end developer",
+      "item5": "Front-end developer"
+    }
+  },
+  "projects": {
+    "title": "projects"
   },
   "footer": {
     "en": "en",

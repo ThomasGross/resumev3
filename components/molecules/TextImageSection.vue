@@ -1,5 +1,5 @@
 <template>
-  <div class="text-image grid">
+  <div class="text-image-section grid">
     <div class="col-desk-1 col-tab-0" />
     <div class="col-desk-5 col-tab-5">
       <h1 data-aos="fade-right" data-aos-duration="500">
@@ -11,7 +11,6 @@
         v-html="$t('profile.block')"
       ></div>
     </div>
-    <div class="img-container"></div>
   </div>
 </template>
 
@@ -39,12 +38,11 @@ export default {
 </script>
 
 <style lang="scss">
-p {
-  font-size: 16px;
-  margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
+.text-image-section {
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 </style>

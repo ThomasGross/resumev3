@@ -6,12 +6,11 @@
         <Hero />
       </section>
     </kinesis-container>
-    <section class="section">
-      <text-image-section></text-image-section>
-    </section>
-    <section class="section">
-      <list-section></list-section>
-    </section>
+    <text-image-section></text-image-section>
+    <list-section></list-section>
+    <education-section></education-section>
+    <tech-section></tech-section>
+    <projects-section></projects-section>
     <Footer />
   </div>
 </template>
@@ -23,6 +22,9 @@ import Footer from "~/components/molecules/Footer";
 import Profile from "~/components/molecules/Profile";
 import TextImageSection from "~/components/molecules/TextImageSection";
 import ListSection from "~/components/molecules/ListSection";
+import EducationSection from "~/components/molecules/EducationSection";
+import TechSection from "~/components/molecules/TechSection";
+import ProjectsSection from "~/components/molecules/ProjectsSection";
 
 export default {
   head() {
@@ -34,14 +36,18 @@ export default {
     Profile,
     Footer,
     TextImageSection,
-    ListSection
+    ListSection,
+    EducationSection,
+    TechSection,
+    ProjectsSection
   }
 };
 </script>
 
 <style lang="scss" scoped>
 .section {
-  margin: 50px 0 0;
+  min-height: 100vh;
+  margin: 100px 0 0;
 
   &:first-child {
     margin: 0;
