@@ -76,6 +76,7 @@
         </div>
       </div>
     </div>
+    <div class="col-desk-1 col-tab-0" />
   </div>
 </template>
 
@@ -93,7 +94,7 @@ export default {
     font-size: 14px;
 
     span {
-      opacity: 70%;
+      color: var(--color-darken);
       white-space: nowrap;
       margin-left: auto;
     }

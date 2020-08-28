@@ -56,7 +56,7 @@ export default {
 .tech-section {
   h3 {
     span {
-      opacity: 70%;
+      color: var(--color-darken);
     }
   }
 }

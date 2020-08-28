@@ -67,7 +67,7 @@ export default {
     font-size: 14px;
 
     span {
-      opacity: 70%;
+      color: var(--color-darken);
       white-space: nowrap;
       margin-left: auto;
     }

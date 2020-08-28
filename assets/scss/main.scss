@@ -1,7 +1,7 @@
 :root {
   --color: #243746;
   --color-disabled: #293136;
-  --color-primary: #158876;
+  --color-darken: #158876;
   --color-secondary: #0e2233;
   --bg: #f3f5f4;
   --bg-secondary: #fff;
@@ -11,7 +11,7 @@
 .dark-mode {
   --color: #ebf4f1;
   --color-disabled: #293136;
-  --color-primary: #41b38a;
+  --color-darken: #818181;
   --color-secondary: #fdf9f3;
   --bg: #091a28;
   --bg-secondary: #071521;
@@ -30,7 +30,7 @@
 .black-mode {
   --color: #ebf4f1;
   --color-disabled: #293136;
-  --color-primary: #41b38a;
+  --color-darken: #41b38a;
   --color-secondary: #fdf9f3;
   --bg: #000;
   --bg-secondary: #071521;
@@ -40,7 +40,7 @@
 .helena-mode {
   --color: pink;
   --color-disabled: #293136;
-  --color-primary: #41b38a;
+  --color-darken: #41b38a;
   --color-secondary: #fdf9f3;
   --bg: green;
   --bg-secondary: #071521;
