@@ -1,8 +1,8 @@
 export default {
-  env: {
-    baseUrl: process.env.BASE_URL || "http://localhost:3000",
-    buildLocale: process.env.BUILD_LOCALE || "en"
-  },
+  // env: {
+  //   baseUrl: process.env.BASE_URL || "http://localhost:3000",
+  //   buildLocale: process.env.BUILD_LOCALE || "en"
+  // },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
@@ -12,7 +12,7 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: "server",
+  target: "static",
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -85,11 +85,15 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/style-resources", "@nuxtjs/color-mode"],
+  buildModules: [
+    "@nuxtjs/style-resources",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/svg"
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/svg", "svg-to-vue-component/nuxt"],
+  modules: ["@nuxtjs/svg"],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -97,23 +101,6 @@ export default {
   build: {
     // customize webpack build
     vendor: ["vue-i18n"] // webpack vue-i18n.bundle.js
-    // postcss: {
-    //   // Add plugin names as key and arguments as value
-    //   // Install them before as dependencies with npm or yarn
-    //   plugins: {
-    //     // Disable a plugin by passing false as value
-    //     "postcss-url": false,
-    //     "postcss-nested": {},
-    //     "postcss-responsive-type": {},
-    //     "postcss-hexrgba": {}
-    //   },
-    //   preset: {
-    //     // Change the postcss-preset-env settings
-    //     autoprefixer: {
-    //       grid: true
-    //     }
-    //   }
-    // }
   },
 
   generate: {

@@ -2,30 +2,30 @@
   <div class="text-image-section grid">
     <div class="col-desk-1 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
-      <h1 data-aos="fade-right" data-aos-duration="500">
-        {{ $t("profile.title") }}
-      </h1>
-      <div
-        data-aos="fade-right"
-        data-aos-duration="500"
-        v-html="$t('profile.block')"
-      ></div>
+      <div v-parallax.modifier="0.1">
+        <h1 data-aos="fade-right" data-aos-duration="500">
+          {{ $t("profile.title") }}
+        </h1>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          v-html="$t('profile.block')"
+        ></div>
+      </div>
+    </div>
+    <div class="col-desk-5 col-tab-8 col-mob-4">
+      <div class="image-container">
+        <img class="image-container__image" src="~/assets/img/IMG_7137.jpg" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import DoodleHeatLeft from "assets/svg/doodle_heat_left.svg";
-import DoodleHeatRight from "assets/svg/doodle_heat_right.svg";
-import DoodleLight from "assets/svg/doodle_light.svg";
-
 import Parallax from "vue-parallax-js";
 
 export default {
   components: {
-    DoodleHeatRight,
-    DoodleHeatLeft,
-    DoodleLight,
     Parallax
   },
   data() {
@@ -39,9 +39,49 @@ export default {
 
 <style lang="scss">
 .text-image-section {
+  position: relative;
+
   p {
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .kinesis-element {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    height: 100%;
+  }
+
+  .image-container {
+    // overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: inherit;
+      transition: box-shadow 0.3s ease, opacity 0.5s ease 0.5s;
+      z-index: -2;
+      box-shadow: 0 11px 90px 42px rgba(0, 0, 0, 0.16);
+      height: 90%;
+      width: 90%;
+      top: 50%;
+      right: -40%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
     }
   }
 }

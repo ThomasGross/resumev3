@@ -1,16 +1,26 @@
 <template>
   <div class="index">
     <Header />
-    <kinesis-container class="index">
-      <section class="section">
+    <kinesis-container>
+      <div class="section">
         <Hero />
-      </section>
+      </div>
     </kinesis-container>
-    <text-image-section></text-image-section>
-    <list-section></list-section>
-    <education-section></education-section>
-    <tech-section></tech-section>
-    <projects-section></projects-section>
+    <div class="section">
+      <text-image-section></text-image-section>
+    </div>
+    <div class="section">
+      <list-section></list-section>
+    </div>
+    <div class="section">
+      <education-section></education-section>
+    </div>
+    <div class="section">
+      <tech-section></tech-section>
+    </div>
+    <div class="section">
+      <projects-section></projects-section>
+    </div>
     <Footer />
   </div>
 </template>
@@ -46,11 +56,11 @@ export default {
 
 <style lang="scss" scoped>
 .section {
-  min-height: 100vh;
-  margin: 100px 0 0;
+  // min-height: 100vh;
+  margin-bottom: 200px;
 
   &:first-child {
-    margin: 0;
+    margin-bottom: 100px;
   }
 }
 </style>
