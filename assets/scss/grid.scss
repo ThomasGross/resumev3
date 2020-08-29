@@ -1,56 +1,6 @@
 // FLEXBOX CSS GRID
 // https://pavellaptev.github.io/tiny-flexbox-grid-system/
 
-// VARiABLES
-// desktop grid
-$grid-desktop-columns: 12;
-$grid-desktop-sideMargin: 60px;
-$grid-desktop-gutter: 30px;
-$grid-desktop-breakpoint: 1800px;
-
-// tablet grid
-$grid-tablet-columns: 8;
-$grid-tablet-sideMargin: 15px;
-$grid-tablet-gutter: 15px;
-$grid-tablet-breakpoint: 768px;
-
-// mobile grid
-$grid-mobile-columns: 4;
-$grid-mobile-sideMargin: 15px;
-$grid-mobile-gutter: 15px;
-$grid-mobile-breakpoint: 320px;
-
-// pixels to % variables
-$desk-grid-width: 100% -
-  (($grid-desktop-sideMargin * 2 / $grid-desktop-breakpoint) * 100%);
-$tab-grid-width: 100% -
-  (($grid-tablet-sideMargin * 2 / $grid-tablet-breakpoint) * 100%);
-$mob-grid-width: 100% -
-  (($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
-
-$desk-gutter: (
-  (
-      $grid-desktop-gutter /
-        ($grid-desktop-breakpoint - ($grid-desktop-sideMargin * 2))
-    ) * 100%
-);
-$tab-gutter: (
-  (
-      $grid-tablet-gutter /
-        ($grid-tablet-breakpoint - ($grid-tablet-sideMargin * 2))
-    ) * 100%
-);
-$mob-gutter: (
-  (
-      $grid-mobile-gutter /
-        ($grid-mobile-breakpoint - ($grid-mobile-sideMargin * 2))
-    ) * 100%
-);
-
-$desk-grid-width-gutter: ($desk-grid-width - $desk-gutter);
-$tab-grid-width-gutter: ($tab-grid-width - $tab-gutter);
-$mob-grid-width-gutter: ($mob-grid-width - $mob-gutter);
-
 // FUNCTIONS AND MiXINS
 @function col-width($i, $columns, $gutter) {
   @return (100% / $columns * $i) - $gutter;

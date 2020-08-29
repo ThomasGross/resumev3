@@ -1,14 +1,14 @@
 <template>
   <div class="tech-section grid">
-    <div class="col-desk-5 col-tab-0" />
-    <div class="col-desk-6 col-tab-5">
+    <div class="col-desk-5 col-tab-0 col-mob-0" />
+    <div class="col-desk-5 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">
         {{ $t("tech.title") }}
       </h1>
     </div>
     <div class="col-desk-5 col-tab-0" />
     <div
-      class="list__item col-desk-2 col-tab-5"
+      class="list__item col-desk-2 col-tab-4 col-mob-2"
       data-aos="fade-right"
       data-aos-duration="500"
     >
@@ -28,7 +28,7 @@
       <h3>Engelsk</h3>
     </div>
     <div
-      class="list__item col-desk-2 col-tab-5"
+      class="list__item col-desk-2 col-tab-4 col-mob-2"
       data-aos="fade-right"
       data-aos-duration="500"
     >
@@ -36,6 +36,7 @@
         <span>Frameworks <i class="fa fa-bolt"></i></span>
       </h3>
       <h3>Vue</h3>
+      <h3>Nuxt</h3>
       <h3>Angular</h3>
       <h3>React</h3>
       <h3>jQuery</h3>
@@ -47,7 +48,7 @@
       <h3>Wordpress</h3>
     </div>
     <div
-      class="list__item col-desk-2 col-tab-5"
+      class="list__item col-desk-2 col-tab-4 col-mob-2"
       data-aos="fade-right"
       data-aos-duration="500"
     >
@@ -76,8 +77,11 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .tech-section {
+  .list {
+  }
+
   h3 {
     span {
       color: var(--color-darken);

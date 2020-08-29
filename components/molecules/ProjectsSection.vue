@@ -1,12 +1,12 @@
 <template>
   <div class="tech-section grid">
-    <div class="col-desk-5 col-tab-5">
+    <!-- <div class="col-desk-12 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">
         {{ $t("projects.title") }}
       </h1>
     </div>
 
-    <div class="col-desk-5">
+    <div class="col-desk-12 col-tab-8 col-mob-4">
       <div class="line-container js-line-container">
         <div class="line js-projects-line"></div>
       </div>
@@ -40,7 +40,7 @@
         <img class="img-responsive" src="implement.png" alt="" />
       </div>
       <a href="https://www.learninginstitute.implement.dk"></a>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -52,7 +52,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .tech-section {
   h3 {
     span {

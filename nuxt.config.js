@@ -55,7 +55,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~/assets/scss/reset"],
+  css: ["~/assets/scss/main"],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -64,9 +64,7 @@ export default {
     // your settings here
     scss: [
       "~/assets/scss/vars/*.scss",
-      "~/assets/scss/mixins/*.scss", // use underscore "_" & also file extension ".scss"
-      "~/assets/scss/main.scss",
-      "aos/dist/aos.css"
+      "~/assets/scss/mixins/*.scss" // use underscore "_" & also file extension ".scss"
     ]
   },
   plugins: [
@@ -91,33 +89,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    "@nuxtjs/svg",
-    "svg-to-vue-component/nuxt"
-    // [
-    //   "nuxt-i18n",
-    //   {
-    //     locales: [
-    //       {
-    //         name: "Danish",
-    //         code: "da",
-    //         iso: "da-DA",
-    //         file: "da.json"
-    //       },
-    //       {
-    //         name: "English",
-    //         code: "en",
-    //         iso: "en-US",
-    //         file: "en.json"
-    //       }
-    //     ],
-    //     // loadLanguagesAsync: true,
-    //     langDir: "locales/",
-    //     lazy: false,
-    //     defaultLocale: "en"
-    //   }
-    // ]
-  ],
+  modules: ["@nuxtjs/svg", "svg-to-vue-component/nuxt"],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -125,6 +97,23 @@ export default {
   build: {
     // customize webpack build
     vendor: ["vue-i18n"] // webpack vue-i18n.bundle.js
+    // postcss: {
+    //   // Add plugin names as key and arguments as value
+    //   // Install them before as dependencies with npm or yarn
+    //   plugins: {
+    //     // Disable a plugin by passing false as value
+    //     "postcss-url": false,
+    //     "postcss-nested": {},
+    //     "postcss-responsive-type": {},
+    //     "postcss-hexrgba": {}
+    //   },
+    //   preset: {
+    //     // Change the postcss-preset-env settings
+    //     autoprefixer: {
+    //       grid: true
+    //     }
+    //   }
+    // }
   },
 
   generate: {

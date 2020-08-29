@@ -1,3 +1,7 @@
+@import "grid.scss";
+@import "reset.scss";
+@import "aos/dist/aos.css";
+
 :root {
   --color: #243746;
   --color-disabled: #293136;
@@ -72,6 +76,9 @@ h1 {
   font-size: 64px;
   line-height: 72px;
   margin-bottom: 50px;
+  word-break: break-all;
+  /* Non standard for WebKit */
+  word-break: break-word;
   hyphens: auto;
 
   &.reverse-color {
@@ -95,6 +102,11 @@ h3 {
   font-weight: 200;
   // text-transform: uppercase;
   letter-spacing: 2px;
+
+  @include media($bp-mobile) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 h4 {
@@ -109,6 +121,11 @@ p {
   line-height: 32px;
   letter-spacing: -1px;
   margin-bottom: 30px;
+
+  @include media($bp-mobile) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 a {

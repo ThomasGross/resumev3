@@ -1,7 +1,7 @@
 <template>
   <div class="text-image-section grid">
-    <div class="col-desk-1 col-tab-0" />
-    <div class="col-desk-5 col-tab-5">
+    <div class="col-desk-1 col-tab-0 col-mob-0" />
+    <div class="col-desk-5 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">
         {{ $t("profile.title") }}
       </h1>
