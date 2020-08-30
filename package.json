@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
+    "babel-eslint": "^10.1.0",
     "aos": "^2.3.4",
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.13.12",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.3",
+    "eslint": "^7.7.0",
     "@nuxtjs/svg": "^0.1.12",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.1"
