@@ -14,7 +14,8 @@
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.13.12",
     "vue-kinesis": "^1.1.5",
-    "vue-parallax-js": "^0.2.3"
+    "vue-parallax-js": "^0.2.3",
+    "vue-scrollto": "^2.18.2"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.3",

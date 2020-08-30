@@ -1,80 +1,78 @@
 <template>
-  <div class="list-section grid">
-    <div class="col-desk-6 col-tab-0 col-mob-0" />
-    <div class="col-desk-5 col-tab-8 col-mob-4">
-      <div v-parallax.modifier="0.1">
-        <h1 data-aos="fade-right" data-aos-duration="500">
-          {{ $t("work.title") }}
-        </h1>
-        <div data-aos="fade-right" data-aos-duration="500" class="experience">
-          <div class="experience__item">
-            <h3 class="experience__item__title">
-              {{ $t("work.job1.title") }}
-              <span>{{ $t("work.job1.year") }}</span>
-            </h3>
-            <h3>
-              <span>{{ $t("work.job1.workplace") }}</span>
-            </h3>
-            <p>
-              {{ $t("work.job1.description") }}
-            </p>
-          </div>
+  <div class="list-section grid" id="work">
+    <div class="col-desk-5 col-tab-0 col-mob-0" />
+    <div class="col-desk-6 col-tab-8 col-mob-4">
+      <h1 data-aos="fade-right" data-aos-duration="500">
+        {{ $t("work.title") }}
+      </h1>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job1.title") }}
+            <span>{{ $t("work.job1.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job1.workplace") }}</span>
+          </h3>
+          <p>
+            {{ $t("work.job1.description") }}
+          </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="500" class="experience">
-          <div class="experience__item">
-            <h3 class="experience__item__title">
-              {{ $t("work.job2.title") }}
-              <span>{{ $t("work.job2.year") }}</span>
-            </h3>
-            <h3>
-              <span>{{ $t("work.job2.workplace") }}</span>
-            </h3>
-            <p>
-              {{ $t("work.job2.description") }}
-            </p>
-          </div>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job2.title") }}
+            <span>{{ $t("work.job2.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job2.workplace") }}</span>
+          </h3>
+          <p>
+            {{ $t("work.job2.description") }}
+          </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="500" class="experience">
-          <div class="experience__item">
-            <h3 class="experience__item__title">
-              {{ $t("work.job3.title") }}
-              <span>{{ $t("work.job3.year") }}</span>
-            </h3>
-            <h3>
-              <span>{{ $t("work.job3.workplace") }}</span>
-            </h3>
-            <p>
-              {{ $t("work.job3.description") }}
-            </p>
-          </div>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job3.title") }}
+            <span>{{ $t("work.job3.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job3.workplace") }}</span>
+          </h3>
+          <p>
+            {{ $t("work.job3.description") }}
+          </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="500" class="experience">
-          <div class="experience__item">
-            <h3 class="experience__item__title">
-              {{ $t("work.job4.title") }}
-              <span>{{ $t("work.job4.year") }}</span>
-            </h3>
-            <h3>
-              <span>{{ $t("work.job4.workplace") }}</span>
-            </h3>
-            <p>
-              {{ $t("work.job4.description") }}
-            </p>
-          </div>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job4.title") }}
+            <span>{{ $t("work.job4.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job4.workplace") }}</span>
+          </h3>
+          <p>
+            {{ $t("work.job4.description") }}
+          </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="500" class="experience">
-          <div class="experience__item">
-            <h3 class="experience__item__title">
-              {{ $t("work.job5.title") }}
-              <span>{{ $t("work.job5.year") }}</span>
-            </h3>
-            <h3>
-              <span>{{ $t("work.job5.workplace") }}</span>
-            </h3>
-            <p>
-              {{ $t("work.job5.description") }}
-            </p>
-          </div>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job5.title") }}
+            <span>{{ $t("work.job5.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job5.workplace") }}</span>
+          </h3>
+          <p>
+            {{ $t("work.job5.description") }}
+          </p>
         </div>
       </div>
     </div>

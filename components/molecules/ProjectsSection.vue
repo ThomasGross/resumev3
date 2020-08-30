@@ -1,5 +1,5 @@
 <template>
-  <div class="tech-section grid">
+  <div class="tech-section grid" id="projects">
     <!-- <div class="col-desk-12 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">
         {{ $t("projects.title") }}

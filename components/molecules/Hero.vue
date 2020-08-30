@@ -1,5 +1,5 @@
 <template>
-  <div class="Hero">
+  <div class="hero" id="hero">
     <div class="background">
       <kinesis-element :strength="20">
         <div
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.Hero {
+.hero {
   position: relative;
   min-height: 600px;
   height: 100vh;
@@ -90,7 +90,7 @@ export default {
       &--color-reverse {
         color: var(--bg);
         text-shadow: -1px -1px 0 var(--color), 1px -1px 0 var(--color),
-          -1px 1px 0 var(--color), 1px 1px 0 $color;
+          -1px 1px 0 var(--color), 1px 1px 0 var(--color);
       }
     }
   }

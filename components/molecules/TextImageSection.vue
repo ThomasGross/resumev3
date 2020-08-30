@@ -1,5 +1,5 @@
 <template>
-  <div class="text-image-section grid">
+  <div class="text-image-section grid" id="profile">
     <div class="col-desk-1 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
       <div v-parallax.modifier="0.1">
@@ -62,6 +62,17 @@ export default {
 
     // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
+    @include media($bp-tablet) {
+      margin-top: 100px;
+      overflow: hidden;
+      height: 0;
+      padding-top: 3 / 4 * 100%;
+      background: white;
+      position: relative;
+      width: calc(100vw + #{$grid-tablet-sideMargin * 2});
+      left: -#{$grid-tablet-sideMargin + $grid-tablet-gutter};
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -80,6 +91,11 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateY(-50%);
       object-fit: cover;
       object-position: top;
     }

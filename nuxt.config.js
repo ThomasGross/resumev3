@@ -93,7 +93,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/svg"],
+  modules: ["@nuxtjs/svg", "vue-scrollto/nuxt"],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

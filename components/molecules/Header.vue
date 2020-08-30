@@ -1,46 +1,88 @@
 <template>
   <div class="header" ref="header">
-    <div class="header__container">
-      <div class="logo-contianer">
-        <nuxt-link to="/">
-          <div class="link">Thomas</div>
-          <div class="link">Gross</div>
-          <div class="link">Rasmussen</div>
-        </nuxt-link>
-      </div>
+    <div class="container">
+      <a
+        class="logo-contianer"
+        href="#"
+        v-scroll-to="{ el: '#hero', offset: 0, easing: 'ease-in-out' }"
+      >
+        <div class="logo-contianer__link">
+          Thomas
+        </div>
+        <div class="logo-contianer__link">
+          Gross
+        </div>
+        <div class="logo-contianer__link">
+          Rasmussen
+        </div>
+      </a>
       <div class="nav-menu">
         <div class="nav-menu__item">
-          <nuxt-link :to="$i18n.path('about')">
+          <a
+            href="#"
+            v-scroll-to="{
+              el: '#profile',
+              offset: -100,
+              easing: 'ease-in-out'
+            }"
+          >
             <div class="link">
               {{ $t("header.profile") }}
               <span></span>
             </div>
-          </nuxt-link>
+          </a>
         </div>
         <div class="nav-menu__item">
-          <nuxt-link :to="$i18n.path('about')">
+          <a
+            href="#"
+            v-scroll-to="{ el: '#work', offset: -100, easing: 'ease-in-out' }"
+          >
             <div class="link">{{ $t("header.work") }}</div>
-          </nuxt-link>
+          </a>
         </div>
         <div class="nav-menu__item">
-          <nuxt-link to="/education">
+          <a
+            href="#"
+            v-scroll-to="{
+              el: '#education',
+              offset: -100,
+              easing: 'ease-in-out'
+            }"
+          >
             <div class="link">{{ $t("header.education") }}</div>
-          </nuxt-link>
+          </a>
         </div>
         <div class="nav-menu__item">
-          <nuxt-link to="/tech">
+          <a
+            href="#"
+            v-scroll-to="{ el: '#tech', offset: -100, easing: 'ease-in-out' }"
+          >
             <div class="link">{{ $t("header.tech") }}</div>
-          </nuxt-link>
+          </a>
         </div>
         <div class="nav-menu__item">
-          <nuxt-link to="/projects">
+          <a
+            href="#"
+            v-scroll-to="{
+              el: '#projects',
+              offset: -100,
+              easing: 'ease-in-out'
+            }"
+          >
             <div class="link">{{ $t("header.projects") }}</div>
-          </nuxt-link>
+          </a>
         </div>
         <div class="nav-menu__item">
-          <nuxt-link to="/contact">
+          <a
+            href="#"
+            v-scroll-to="{
+              el: '#contact',
+              offset: -100,
+              easing: 'ease-in-out'
+            }"
+          >
             <div class="link">{{ $t("header.contact") }}</div>
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>
@@ -75,43 +117,55 @@ export default {
   @include media($bp-mobile) {
     width: $mob-grid-width-gutter;
   }
+}
 
-  &__container {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
+.logo-contianer {
+  position: relative;
 
-    .logo-contianer {
-      position: relative;
+  $hover: "";
 
-      .link {
-        color: var(--color);
-        pointer-events: all;
-      }
+  &:hover {
+    $hover: &;
+  }
+
+  &__link {
+    position: relative;
+    color: var(--color);
+    pointer-events: all;
+    transition: all 0.3s ease-in-out;
+
+    #{$hover} & {
+      transform: skewX(20deg) translateX(5px);
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+  .nav-menu {
+    position: relative;
+
+    &__item {
+      margin-left: 20px;
     }
 
-    .nav-menu {
-      position: relative;
+    .link {
+      pointer-events: all;
+      color: var(--color);
+      text-align: right;
+      transition: all 0.3s ease;
 
-      &__item {
-        margin-left: 20px;
+      &:hover {
+        transform: skewX(20deg) translateX(-30px);
       }
 
-      .link {
-        pointer-events: all;
-        color: var(--color);
-        text-align: right;
-        transition: all 0.3s ease;
-
-        &:hover {
-          transform: skewX(20deg) translateX(-30px);
-        }
-
-        &--bold-red {
-          margin-left: 60px;
-          color: $color-red;
-          font-family: $font-primary;
-        }
+      &--bold-red {
+        margin-left: 60px;
+        color: $color-red;
+        font-family: $font-primary;
       }
     }
   }
