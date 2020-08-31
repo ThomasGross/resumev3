@@ -2,9 +2,7 @@
   <div class="list-section grid" id="education">
     <div class="col-desk-1 col-tab-0" />
     <div class="col-desk-6 col-tab-8 col-mob-4">
-      <h1 data-aos="fade-right" data-aos-duration="500">
-        {{ $t("education.title") }}
-      </h1>
+      <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("education.title") }}</h1>
       <div data-aos="fade-right" data-aos-duration="500" class="experience">
         <div class="experience__item">
           <h3 class="experience__item__title">
@@ -57,7 +55,7 @@
 import Parallax from "vue-parallax-js";
 
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
@@ -74,6 +72,10 @@ export default {
 
     &__item {
       margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &__title {
         display: flex;

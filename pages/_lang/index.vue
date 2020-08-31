@@ -60,7 +60,7 @@ export default {
   margin-bottom: 200px;
 
   @include media($bp-mobile) {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   &:first-child {

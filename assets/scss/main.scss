@@ -99,6 +99,7 @@ h1 {
   @include media($bp-mobile) {
     font-size: 32px;
     line-height: 48px;
+    margin-bottom: 30px;
   }
 }
 

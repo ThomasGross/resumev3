@@ -2,9 +2,7 @@
   <div class="tech-section grid" id="tech">
     <div class="col-desk-5 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
-      <h1 data-aos="fade-right" data-aos-duration="500">
-        {{ $t("tech.title") }}
-      </h1>
+      <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("tech.title") }}</h1>
     </div>
     <div class="col-desk-5 col-tab-0" />
     <div
@@ -13,7 +11,10 @@
       data-aos-duration="500"
     >
       <h3>
-        <span>Sprog <i class="fa fa-code"></i></span>
+        <span>
+          Sprog
+          <i class="fa fa-code"></i>
+        </span>
       </h3>
       <h3>HTML</h3>
       <h3>CSS</h3>
@@ -33,7 +34,10 @@
       data-aos-duration="500"
     >
       <h3>
-        <span>Frameworks <i class="fa fa-bolt"></i></span>
+        <span>
+          Frameworks
+          <i class="fa fa-bolt"></i>
+        </span>
       </h3>
       <h3>Vue</h3>
       <h3>Nuxt</h3>
@@ -53,7 +57,10 @@
       data-aos-duration="500"
     >
       <h3>
-        <span>Software & tools <i class="fa fa-laptop"></i></span>
+        <span>
+          Software & tools
+          <i class="fa fa-laptop"></i>
+        </span>
       </h3>
       <h3>OS X</h3>
       <h3>GIT</h3>
@@ -73,7 +80,7 @@
 import Parallax from "vue-parallax-js";
 
 export default {
-  components: {}
+  components: {},
 };
 </script>
 
