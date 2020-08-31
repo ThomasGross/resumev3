@@ -5,15 +5,21 @@
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >{{ $t("hero.title") }}</div>
+        >
+          {{ $t("hero.title") }}
+        </div>
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >{{ $t("hero.title") }}</div>
+        >
+          {{ $t("hero.title") }}
+        </div>
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >{{ $t("hero.title") }}</div>
+        >
+          {{ $t("hero.title") }}
+        </div>
       </kinesis-element>
     </div>
 
@@ -30,7 +36,9 @@
           </kinesis-element>
         </div>
 
-        <div class="box__text-group__text title box__text-group__text--color-reverse">
+        <div
+          class="box__text-group__text title box__text-group__text--color-reverse"
+        >
           <p class="gradient-text">{{ $t("hero.title") }}</p>
         </div>
       </div>
@@ -47,8 +55,8 @@ export default {
   computed: {
     locale() {
       return this.$store.state.locale;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -109,7 +117,7 @@ export default {
     }
 
     @include media($bp-mobile) {
-      width: 100vw;
+      width: calc(100% + 1px);
     }
 
     .img {

@@ -42,7 +42,7 @@ import ContactSection from "~/components/molecules/ContactSection";
 
 export default {
   head() {
-    return { title: this.$t("home.title") };
+    return { title: this.$t("siteTitle") };
   },
   components: {
     Hero,
@@ -54,8 +54,8 @@ export default {
     EducationSection,
     TechSection,
     ProjectsSection,
-    ContactSection,
-  },
+    ContactSection
+  }
 };
 </script>
 
