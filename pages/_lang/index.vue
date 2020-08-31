@@ -21,6 +21,9 @@
     <div class="section">
       <projects-section></projects-section>
     </div>
+    <div class="section">
+      <contact-section></contact-section>
+    </div>
     <Footer />
   </div>
 </template>
@@ -35,6 +38,7 @@ import ListSection from "~/components/molecules/ListSection";
 import EducationSection from "~/components/molecules/EducationSection";
 import TechSection from "~/components/molecules/TechSection";
 import ProjectsSection from "~/components/molecules/ProjectsSection";
+import ContactSection from "~/components/molecules/ContactSection";
 
 export default {
   head() {
@@ -50,6 +54,7 @@ export default {
     EducationSection,
     TechSection,
     ProjectsSection,
+    ContactSection,
   },
 };
 </script>

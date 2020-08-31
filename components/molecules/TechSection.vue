@@ -12,7 +12,7 @@
     >
       <h3>
         <span>
-          Sprog
+          {{ $t("tech.lang") }}
           <i class="fa fa-code"></i>
         </span>
       </h3>
@@ -25,8 +25,8 @@
       <h3>C#</h3>
       <h3>UML</h3>
       <h3>SQL</h3>
-      <h3>Dansk</h3>
-      <h3>Engelsk</h3>
+      <h3>{{ $t("tech.danish") }}</h3>
+      <h3>{{ $t("tech.english") }}</h3>
     </div>
     <div
       class="list__item col-desk-2 col-tab-4 col-mob-2"

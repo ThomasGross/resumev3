@@ -1,43 +1,55 @@
 <template>
   <div class="projects grid" id="projects">
-    <div class="col-desk-12 col-tab-8 col-mob-4">
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="col-desk-11 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("projects.title") }}</h1>
     </div>
 
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <h3 class="item__title">Kontainer.dk</h3>
-      <div class="item__image-container">
-        <div class="item__image-container__image">
-          <img class="img-responsive" src="~/assets/img/kontainer2.png" alt />
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-4 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Kontainer.dk</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/kontainer2.png" alt />
+          </div>
+          <a href="https://www.kontainer.dk"></a>
         </div>
-        <a href="https://www.kontainer.dk"></a>
       </div>
     </div>
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <h3 class="item__title">Genbyg.dk</h3>
-      <div class="item__image-container">
-        <div class="item__image-container__image">
-          <img class="img-responsive" src="~/assets/img/genbyg2.png" alt />
+    <div class="item col-desk-4 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Genbyg.dk</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/genbyg2.png" alt />
+          </div>
+          <a href="https://www.genbyg.dk"></a>
         </div>
-        <a href="https://www.genbyg.dk"></a>
       </div>
     </div>
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <h3 class="item__title">Frivillig.dk</h3>
-      <div class="item__image-container">
-        <div class="item__image-container__image">
-          <img class="img-responsive" src="~/assets/img/frivillig2.png" alt />
+    <div class="col-desk-3 col-tab-0"></div>
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-4 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Frivillig.dk</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/frivillig2.png" alt />
+          </div>
+          <a href="https://www.frivillig.dk"></a>
         </div>
-        <a href="https://www.frivillig.dk"></a>
       </div>
     </div>
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <h3 class="item__title">Learninginstitute.implement.dk</h3>
-      <div class="item__image-container">
-        <div class="item__image-container__image">
-          <img class="img-responsive" src="~/assets/img/implement.png" alt />
+    <div class="item col-desk-4 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Learninginstitute.implement.dk</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/implement.png" alt />
+          </div>
+          <a href="https://www.learninginstitute.implement.dk"></a>
         </div>
-        <a href="https://www.learninginstitute.implement.dk"></a>
       </div>
     </div>
   </div>
@@ -115,10 +127,10 @@ export default {
   }
 
   &__title {
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     #{$hover} & {
-      color: rgba(0, 0, 0, 0.5);
+      opacity: 50%;
     }
   }
 }

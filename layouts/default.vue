@@ -16,7 +16,7 @@ import Grid from "~/components/molecules/Grid";
 export default {
   data() {
     return {
-      colors: ["light", "system", "dark", "sepia", "black", "helena"],
+      colors: ["light", "dark", "sepia", "black", "helena"],
       count: 0,
     };
   },

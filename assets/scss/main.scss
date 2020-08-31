@@ -3,13 +3,9 @@
 @import "aos/dist/aos.css";
 
 :root {
-  --c-dark: #243746;
-  --c-sepia: #433422;
-  --c-helena: pink;
-
   --color: #243746;
   --color-disabled: #293136;
-  --color-darken: #158876;
+  --color-darken: #7c8488;
   --color-secondary: #0e2233;
   --bg: #f3f5f4;
   --bg-secondary: #fff;
@@ -29,6 +25,7 @@
 .sepia-mode {
   --color: #433422;
   --color-disabled: #293136;
+  --color-darken: #868181;
   --color-secondary: #504231;
   --bg: #f1e7d0;
   --bg-secondary: #eae0c9;
@@ -38,7 +35,7 @@
 .black-mode {
   --color: #ebf4f1;
   --color-disabled: #293136;
-  --color-darken: #41b38a;
+  --color-darken: #8b8b8b;
   --color-secondary: #fdf9f3;
   --bg: #000;
   --bg-secondary: #071521;
@@ -48,7 +45,7 @@
 .helena-mode {
   --color: pink;
   --color-disabled: #293136;
-  --color-darken: #41b38a;
+  --color-darken: rgb(209, 157, 166);
   --color-secondary: #fdf9f3;
   --bg: green;
   --bg-secondary: #071521;
@@ -57,6 +54,7 @@
 
 html {
   background-color: var(--bg);
+  transition: color 0.3s, background-color 0.3s;
 }
 
 // Custom styles
@@ -88,7 +86,6 @@ h1 {
   /* Non standard for WebKit */
   word-break: break-word;
   hyphens: auto;
-  transition: color 0.3s;
 
   &.reverse-color {
     color: var(--bg);
@@ -149,6 +146,7 @@ a {
   font-family: $font-primary;
   cursor: pointer;
   text-decoration: none;
+  color: var(--color);
 
   &.link {
     font-size: 16px;

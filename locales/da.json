@@ -10,6 +10,80 @@
   "hero": {
     "title": "I am a creative frontend developer"
   },
+  "profile": {
+    "title": "Profil",
+    "block": "<p> Jeg er en kreativ og detaljeorienteret front-end udvikler med erfaring indenfor back-end og design. Jeg har fokus på den visuelle del af webudvikling og holder af at være en del af den kreative process. </p> <p> Jeg er en problemløser, der elsker processen fra idé til færdigt produkt med en mission om altid at finde de bedste løsninger undervejs. </p> <p> Jeg er perfektionist indenfor mit fag og arbejder derfor altid på, at forbedre og optimere kvaliteten af mit arbejde. </p> <p> Ambitionen med min jobsøgning er, at finde en arbejdsplads der kan styrke min kompetenceudvikling og hvor at sociale arrangementer, humor og samarbejde er høj prioritet. </p>"
+  },
+  "work": {
+    "title": "ERHVERVSERFARING",
+    "job1": {
+      "title": "Front-end udvikler",
+      "year": "2017-2020",
+      "workplace": "Konform A/S",
+      "description": "Webudvikling - Konsulent arbejde som front-end udvikler, på varierende projekter og virksomheder. Teknisk erfaring med Html, Css, Sass, Javascript, Vue.js, React.js, jQuery, Php, Zend, Laravel, Wordpress, optimering og udvikling af inhouse CMS."
+    },
+    "job2": {
+      "title": "Frontend udvikler (praktik)",
+      "year": "2017",
+      "workplace": "Konform A/S",
+      "description": "Webudvikling - Arbejde som front-end udvikler, på frivillig.dk. Teknisk erfaring med Html, Css, Sass, Javascript, jQuery, Php, Zend, optimering og udvikling af inhouse CMS."
+    },
+    "job3": {
+      "title": "IT drift",
+      "year": "2016-2017",
+      "workplace": "Koda",
+      "description": "It-drift, netværk, it-support og databasehåndtering - Arbejdsopgaver bestod i it-support til Kodas ansatte, sikkerhedskopiere Kodas data og arbejde på sikkerheden af databaser og servere."
+    },
+    "job4": {
+      "title": "Webudvikler (praktik)",
+      "year": "2016",
+      "workplace": "Koda",
+      "description": "Webudvikling - Udvikling af Kodas hjemmeside og CMS. Teknisk erfaring med Html, Css, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
+    },
+    "job5": {
+      "title": "Continuity",
+      "year": "2016-2017",
+      "workplace": "TV3 Sport",
+      "description": "Masterering, klipning og databasehåndtering af esports materiale til TV3 Sports kanaler."
+    }
+  },
+  "education": {
+    "title": "UDDANNELSE",
+    "item1": {
+      "title": "Webudvikling",
+      "year": "2017-2018",
+      "workplace": "Københavns Erhvervs Akademi"
+    },
+    "item2": {
+      "title": "Softwareudvikling og softwaredesign",
+      "year": "2014-2017",
+      "workplace": "Københavns Erhvervs Akademi"
+    },
+    "item3": {
+      "title": "Naturguide og ranger uddannelse",
+      "year": "2012",
+      "workplace": "Entabeni Nature Guide Training"
+    },
+    "item4": {
+      "title": "STX",
+      "year": "2009-2012",
+      "workplace": "Herlev Gymnasium & Hf"
+    }
+  },
+  "tech": {
+    "title": "Teknologier",
+    "lang": "Sprog",
+    "danish": "Dansk",
+    "english": "Engelsk"
+  },
+  "projects": {
+    "title": "Projekter"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "date": "28-02-1992",
+    "city": "København Ø"
+  },
   "footer": {
     "en": "en",
     "da": "da"

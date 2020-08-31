@@ -150,12 +150,18 @@ export default {
       text-align: right;
       transition: all 0.3s ease;
 
+      word-break: break-all;
+      /* Non standard for WebKit */
+      word-break: break-word;
+      hyphens: auto;
+
       @include media($bp-tablet) {
         font-size: 14px;
       }
 
       &:hover {
-        transform: skewX(20deg) translateX(-30px);
+        padding-right: 30px;
+        transform: skewX(20deg);
       }
     }
   }

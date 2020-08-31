@@ -50,17 +50,17 @@
   "education": {
     "title": "EDUCATION",
     "item1": {
-      "title": "Webudvikling",
+      "title": "Web development",
       "year": "2017-2018",
       "workplace": "Københavns Erhvervs Akademi"
     },
     "item2": {
-      "title": "Softwareudvikling og softwaredesign",
+      "title": "Software development & software design",
       "year": "2014-2017",
       "workplace": "Københavns Erhvervs Akademi"
     },
     "item3": {
-      "title": "Naturguide og ranger uddannelse",
+      "title": "Natureguide and ranger education",
       "year": "2012",
       "workplace": "Entabeni Nature Guide Training"
     },
@@ -70,32 +70,19 @@
       "workplace": "Herlev Gymnasium & Hf"
     }
   },
+  "projects": {
+    "title": "Projects"
+  },
   "tech": {
     "title": "Technologies",
-    "col1": {
-      "item1": "Front-end developer",
-      "item2": "Front-end developer",
-      "item3": "Front-end developer",
-      "item4": "Front-end developer",
-      "item5": "Front-end developer"
-    },
-    "col2": {
-      "item1": "Front-end developer",
-      "item2": "Front-end developer",
-      "item3": "Front-end developer",
-      "item4": "Front-end developer",
-      "item5": "Front-end developer"
-    },
-    "col3": {
-      "item1": "Front-end developer",
-      "item2": "Front-end developer",
-      "item3": "Front-end developer",
-      "item4": "Front-end developer",
-      "item5": "Front-end developer"
-    }
+    "lang": "Language",
+    "danish": "Danish",
+    "english": "English"
   },
-  "projects": {
-    "title": "projects"
+  "contact": {
+    "title": "Contact",
+    "date": "1992-02-28",
+    "city": "Copenhagen"
   },
   "footer": {
     "en": "en",

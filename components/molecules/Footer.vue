@@ -10,8 +10,7 @@
         ]"
         active-class="none"
         exact
-        >DA</NuxtLink
-      >
+      >DA</NuxtLink>
       <span>/</span>
       <NuxtLink
         :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
@@ -21,8 +20,7 @@
         ]"
         active-class="none"
         exact
-        >EN</NuxtLink
-      >
+      >EN</NuxtLink>
     </div>
   </div>
 </template>
@@ -35,8 +33,8 @@ export default {
   computed: {
     locale() {
       return this.$store.state.locale;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -72,7 +70,7 @@ export default {
       color: var(--color);
 
       &--disabled {
-        color: gray;
+        color: var(--color-darken);
         pointer-events: none;
       }
     }
