@@ -2,7 +2,7 @@
   <div class="text-image-section grid" id="profile">
     <div class="col-desk-1 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
-      <div v-parallax.modifier="0.1">
+      <div v-parallax.modifier="0">
         <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("profile.title") }}</h1>
         <div data-aos="fade-right" data-aos-duration="500" v-html="$t('profile.block')"></div>
       </div>
@@ -61,7 +61,7 @@ export default {
     }
 
     @include media($bp-mobile) {
-      margin-top: 100px;
+      margin-top: 30px;
       padding-top: 4 / 5 * 100%;
     }
 
@@ -70,7 +70,6 @@ export default {
       content: "";
       border-radius: inherit;
       transition: box-shadow 0.3s ease, opacity 0.5s ease 0.5s;
-      z-index: -2;
       box-shadow: 0 11px 90px 42px rgba(0, 0, 0, 0.16);
       height: 90%;
       width: 90%;

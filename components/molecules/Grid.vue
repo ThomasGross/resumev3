@@ -20,11 +20,11 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
-      isActive: false
+      isActive: false,
     };
-  }
+  },
 };
 </script>
 

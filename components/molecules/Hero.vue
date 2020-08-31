@@ -75,6 +75,7 @@ export default {
       font-size: 120px;
       text-shadow: -1px -1px 0 var(--bg), 1px -1px 0 var(--bg),
         -1px 1px 0 var(--bg), 1px 1px 0 var(--bg);
+      transition: color 0.3s;
 
       &--color-reverse {
         color: var(--bg);
@@ -98,6 +99,7 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    transition: color 0.3s;
 
     background: url("https://source.unsplash.com/random/1000x1000") no-repeat
       50%;
@@ -124,6 +126,7 @@ export default {
       left: -50%;
       top: 50%;
       transform: translate(calc(-1 * (100vw - 50vw) / 2), -27px);
+      transition: color 0.3s;
 
       @include media($bp-tablet) {
         transform: translate(calc(-1 * (100vw - 75vw) / 2), -27px);
@@ -143,9 +146,9 @@ export default {
         line-height: 85px;
         color: var(--bg);
         font-size: 120px;
+        transition: color 0.3s;
         // text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         //   1px 1px 0 white;
-        // mix-blend-mode: exclusion;
 
         &.title {
           display: flex;
@@ -165,7 +168,7 @@ export default {
           p {
             font-family: $font-primary;
             line-height: 20px;
-            color: var(--color);
+            color: white;
             letter-spacing: 5px;
             margin: 0 30px;
           }

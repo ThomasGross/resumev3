@@ -6,15 +6,9 @@
         href="#"
         v-scroll-to="{ el: '#hero', offset: 0, easing: 'ease-in-out' }"
       >
-        <div class="logo-contianer__link">
-          Thomas
-        </div>
-        <div class="logo-contianer__link">
-          Gross
-        </div>
-        <div class="logo-contianer__link">
-          Rasmussen
-        </div>
+        <div class="logo-contianer__link">Thomas</div>
+        <div class="logo-contianer__link">Gross</div>
+        <div class="logo-contianer__link">Rasmussen</div>
       </a>
       <div class="nav-menu">
         <div class="nav-menu__item">
@@ -33,10 +27,7 @@
           </a>
         </div>
         <div class="nav-menu__item">
-          <a
-            href="#"
-            v-scroll-to="{ el: '#work', offset: -100, easing: 'ease-in-out' }"
-          >
+          <a href="#" v-scroll-to="{ el: '#work', offset: -100, easing: 'ease-in-out' }">
             <div class="link">{{ $t("header.work") }}</div>
           </a>
         </div>
@@ -53,10 +44,7 @@
           </a>
         </div>
         <div class="nav-menu__item">
-          <a
-            href="#"
-            v-scroll-to="{ el: '#tech', offset: -100, easing: 'ease-in-out' }"
-          >
+          <a href="#" v-scroll-to="{ el: '#tech', offset: -100, easing: 'ease-in-out' }">
             <div class="link">{{ $t("header.tech") }}</div>
           </a>
         </div>
@@ -94,7 +82,7 @@ import LogoIcon from "assets/svg/logo.svg";
 
 export default {
   components: { LogoIcon },
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -134,6 +122,10 @@ export default {
     pointer-events: all;
     transition: all 0.3s ease-in-out;
 
+    @include media($bp-tablet) {
+      font-size: 14px;
+    }
+
     #{$hover} & {
       transform: skewX(20deg) translateX(5px);
     }
@@ -158,14 +150,12 @@ export default {
       text-align: right;
       transition: all 0.3s ease;
 
-      &:hover {
-        transform: skewX(20deg) translateX(-30px);
+      @include media($bp-tablet) {
+        font-size: 14px;
       }
 
-      &--bold-red {
-        margin-left: 60px;
-        color: $color-red;
-        font-family: $font-primary;
+      &:hover {
+        transform: skewX(20deg) translateX(-30px);
       }
     }
   }
