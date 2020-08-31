@@ -15,7 +15,7 @@ $grid-tablet-breakpoint: 768px;
 $grid-mobile-columns: 4;
 $grid-mobile-sideMargin: 20px;
 $grid-mobile-gutter: 10px;
-$grid-mobile-breakpoint: 320px;
+$grid-mobile-breakpoint: 425px;
 
 // pixels to % variables
 $desk-grid-width: 100% -
@@ -50,4 +50,3 @@ $mob-grid-width-gutter: ($mob-grid-width - $mob-gutter);
 
 $full-width: calc(100% + ((100vw - 0px) - 100%));
 $space: calc(((-100vw - 0px) + 100%) / 2);
-// $mob-space: calc(100vw - #{$grid-mobile-breakpoint});
