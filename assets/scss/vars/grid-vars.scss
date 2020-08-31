@@ -7,14 +7,14 @@ $grid-desktop-breakpoint: 1800px;
 
 // tablet grid
 $grid-tablet-columns: 8;
-$grid-tablet-sideMargin: 15px;
-$grid-tablet-gutter: 30px;
+$grid-tablet-sideMargin: 20px;
+$grid-tablet-gutter: 40px;
 $grid-tablet-breakpoint: 768px;
 
 // mobile grid
 $grid-mobile-columns: 4;
-$grid-mobile-sideMargin: 15px;
-$grid-mobile-gutter: 15px;
+$grid-mobile-sideMargin: 20px;
+$grid-mobile-gutter: 10px;
 $grid-mobile-breakpoint: 320px;
 
 // pixels to % variables
@@ -47,3 +47,7 @@ $mob-gutter: (
 $desk-grid-width-gutter: ($desk-grid-width - $desk-gutter);
 $tab-grid-width-gutter: ($tab-grid-width - $tab-gutter);
 $mob-grid-width-gutter: ($mob-grid-width - $mob-gutter);
+
+$full-width: calc(100% + ((100vw - 0px) - 100%));
+$space: calc(((-100vw - 0px) + 100%) / 2);
+// $mob-space: calc(100vw - #{$grid-mobile-breakpoint});

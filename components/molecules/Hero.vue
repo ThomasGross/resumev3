@@ -5,44 +5,33 @@
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >
-          {{ $t("hero.title") }}
-        </div>
+        >{{ $t("hero.title") }}</div>
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >
-          {{ $t("hero.title") }}
-        </div>
+        >{{ $t("hero.title") }}</div>
         <div
           class="background__text background__text--color-reverse"
           :strength="0.5"
-        >
-          {{ $t("hero.title") }}
-        </div>
+        >{{ $t("hero.title") }}</div>
       </kinesis-element>
     </div>
 
     <kinesis-element class="container-box" :strength="10">
       <div class="box">
-        <img
-          class="img"
-          src="https://source.unsplash.com/random/1000x1000"
-          alt
-        />
+        <!-- <img class="img" src="https://source.unsplash.com/random/1000x1000" alt /> -->
 
         <div class="box__text-group">
+          <kinesis-element class="margin-bot" :strength="5">
+            <div class="box__text-group__text">{{ $t("hero.title") }}</div>
+          </kinesis-element>
           <kinesis-element :strength="5">
             <div class="box__text-group__text">{{ $t("hero.title") }}</div>
           </kinesis-element>
-          <div
-            class="box__text-group__text title box__text-group__text--color-reverse"
-          >
-            <p class="gradient-text">{{ $t("hero.title") }}</p>
-          </div>
-          <kinesis-element :strength="5">
-            <div class="box__text-group__text">{{ $t("hero.title") }}</div>
-          </kinesis-element>
+        </div>
+
+        <div class="box__text-group__text title box__text-group__text--color-reverse">
+          <p class="gradient-text">{{ $t("hero.title") }}</p>
         </div>
       </div>
     </kinesis-element>
@@ -58,8 +47,8 @@ export default {
   computed: {
     locale() {
       return this.$store.state.locale;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -110,6 +99,17 @@ export default {
     transform: translate(-50%, -50%);
     overflow: hidden;
 
+    background: url("https://source.unsplash.com/random/1000x1000") no-repeat
+      50%;
+
+    @include media($bp-tablet) {
+      width: 75vw;
+    }
+
+    @include media($bp-mobile) {
+      width: 100vw;
+    }
+
     .img {
       z-index: -1;
       position: absolute;
@@ -125,6 +125,18 @@ export default {
       top: 50%;
       transform: translate(calc(-1 * (100vw - 50vw) / 2), -27px);
 
+      @include media($bp-tablet) {
+        transform: translate(calc(-1 * (100vw - 75vw) / 2), -27px);
+      }
+
+      @include media($bp-mobile) {
+        transform: translate(calc(-1 * (100vw - 100vw) / 2), -27px);
+      }
+
+      .margin-bot {
+        margin-bottom: 85px;
+      }
+
       &__text {
         white-space: nowrap;
         font-family: $font-primary;
@@ -133,6 +145,7 @@ export default {
         font-size: 120px;
         // text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         //   1px 1px 0 white;
+        // mix-blend-mode: exclusion;
 
         &.title {
           display: flex;
@@ -140,13 +153,14 @@ export default {
           align-items: center;
           font-size: 20px;
           height: 85px;
-          width: 50vw;
-          transform: translate(
-            calc(-1 * (0% - 50vw) / 2),
-            calc(-1 * (50px - 50%) / 2)
-          );
           white-space: normal;
           text-align: center;
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          mix-blend-mode: difference;
 
           p {
             font-family: $font-primary;

@@ -49,8 +49,8 @@ export default {
     ListSection,
     EducationSection,
     TechSection,
-    ProjectsSection
-  }
+    ProjectsSection,
+  },
 };
 </script>
 
@@ -59,8 +59,16 @@ export default {
   // min-height: 100vh;
   margin-bottom: 200px;
 
+  @include media($bp-mobile) {
+    margin-bottom: 50px;
+  }
+
   &:first-child {
     margin-bottom: 100px;
+
+    @include media($bp-mobile) {
+      margin-bottom: 50px;
+    }
   }
 }
 </style>

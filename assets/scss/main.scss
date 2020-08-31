@@ -55,6 +55,10 @@
   --border-color: #0d2538;
 }
 
+html {
+  background-color: var(--bg);
+}
+
 // Custom styles
 body {
   font-family: $font-primary;
@@ -90,6 +94,11 @@ h1 {
     text-shadow: -1px -1px 0 var(--color), 1px -1px 0 var(--color),
       -1px 1px 0 var(--color), 1px 1px 0 var(--color);
   }
+
+  @include media($bp-mobile) {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 h2 {
@@ -110,6 +119,7 @@ h3 {
   @include media($bp-mobile) {
     font-size: 14px;
     line-height: 24px;
+    letter-spacing: 1px;
   }
 }
 

@@ -3,14 +3,8 @@
     <div class="col-desk-1 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
       <div v-parallax.modifier="0.1">
-        <h1 data-aos="fade-right" data-aos-duration="500">
-          {{ $t("profile.title") }}
-        </h1>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="500"
-          v-html="$t('profile.block')"
-        ></div>
+        <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("profile.title") }}</h1>
+        <div data-aos="fade-right" data-aos-duration="500" v-html="$t('profile.block')"></div>
       </div>
     </div>
     <div class="col-desk-5 col-tab-8 col-mob-4">
@@ -26,14 +20,14 @@ import Parallax from "vue-parallax-js";
 
 export default {
   components: {
-    Parallax
+    Parallax,
   },
   data() {
     return {
       isShow: false,
-      isShake: false
+      isShake: false,
     };
-  }
+  },
 };
 </script>
 
@@ -48,29 +42,27 @@ export default {
   }
 
   .kinesis-element {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
     height: 100%;
   }
 
   .image-container {
-    // overflow: hidden;
     position: relative;
     height: 100%;
-
-    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: auto;
 
     @include media($bp-tablet) {
       margin-top: 100px;
-      overflow: hidden;
       height: 0;
       padding-top: 3 / 4 * 100%;
       background: white;
       position: relative;
-      width: calc(100vw + #{$grid-tablet-sideMargin * 2});
-      left: -#{$grid-tablet-sideMargin + $grid-tablet-gutter};
+      width: $full-width;
+      left: $space;
+    }
+
+    @include media($bp-mobile) {
+      margin-top: 100px;
+      padding-top: 4 / 5 * 100%;
     }
 
     &::before {
