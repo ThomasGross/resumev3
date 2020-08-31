@@ -21,9 +21,6 @@ export default {
     };
   },
   components: { LogoIcon, Grid },
-  mounted() {
-    this.$colorMode.preference = "light";
-  },
   methods: {
     changeColor() {
       this.count++;

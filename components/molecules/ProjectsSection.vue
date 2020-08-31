@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-desk-1 col-tab-0"></div>
-    <div class="item col-desk-4 col-tab-8 col-mob-4">
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <h3 class="item__title">Kontainer.dk</h3>
         <div class="item__image-container">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="item col-desk-4 col-tab-8 col-mob-4">
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <h3 class="item__title">Genbyg.dk</h3>
         <div class="item__image-container">
@@ -28,9 +28,9 @@
         </div>
       </div>
     </div>
-    <div class="col-desk-3 col-tab-0"></div>
     <div class="col-desk-1 col-tab-0"></div>
-    <div class="item col-desk-4 col-tab-8 col-mob-4">
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <h3 class="item__title">Frivillig.dk</h3>
         <div class="item__image-container">
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="item col-desk-4 col-tab-8 col-mob-4">
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <h3 class="item__title">Learninginstitute.implement.dk</h3>
         <div class="item__image-container">

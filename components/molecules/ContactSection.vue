@@ -1,12 +1,12 @@
 <template>
   <div class="contact grid" id="contact">
-    <div class="list col-desk-1 col-tab-0" />
+    <div class="list col-desk-1 col-tab-8 col-mob-4" />
     <h1
       data-aos="fade-right"
       data-aos-duration="500"
       class="col-desk-11 col-tab-8 col-mob-4"
     >{{ $t("contact.title") }}</h1>
-    <div class="list col-desk-1 col-tab-0" />
+    <div class="list col-desk-1 col-tab-8 col-mob-4" />
     <div class="list col-desk-11 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <div class="list__item">

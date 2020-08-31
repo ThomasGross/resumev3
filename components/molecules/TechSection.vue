@@ -87,6 +87,9 @@ export default {
 <style lang="scss" scoped>
 .tech-section {
   .list {
+    &__item {
+      margin-bottom: 30px;
+    }
   }
 
   h3 {
