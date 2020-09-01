@@ -1,7 +1,7 @@
 <template>
   <div class="tech-section grid" id="tech">
     <div class="col-desk-5 col-tab-0 col-mob-0" />
-    <div class="col-desk-5 col-tab-8 col-mob-4">
+    <div class="col-desk-6 col-tab-8 col-mob-4">
       <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("tech.title") }}</h1>
     </div>
     <div class="col-desk-5 col-tab-0" />
