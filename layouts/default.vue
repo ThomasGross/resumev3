@@ -1,10 +1,9 @@
 <template>
   <div>
-    <!-- <ul>
-      <li v-for="color of colors" :key="color" @click="$colorMode.preference = color">{{ color }}</li>
-    </ul>-->
-    <div class="color-button" v-on:click="changeColor">C</div>
-    <Grid />
+    <div class="layout-buttons">
+      <div class="color-button" v-on:click="changeColor">C</div>
+      <Grid />
+    </div>
     <Nuxt />
   </div>
 </template>
@@ -39,14 +38,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.color-button {
-  z-index: 999999999;
-  padding: 10px;
-  background: rgba($color: purple, $alpha: 0.2);
-  pointer-events: all;
-  cursor: pointer;
+.layout-buttons {
   position: fixed;
-  bottom: 36px;
+  bottom: 30px;
   left: 0;
+  z-index: 999999999;
+
+  .color-button {
+    width: 30px;
+    height: 30px;
+    background: rgba($color: purple, $alpha: 0.2);
+    pointer-events: all;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+  }
 }
 </style>

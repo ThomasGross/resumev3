@@ -32,7 +32,6 @@
 import Hero from "~/components/molecules/Hero";
 import Header from "~/components/molecules/Header";
 import Footer from "~/components/molecules/Footer";
-import Profile from "~/components/molecules/Profile";
 import TextImageSection from "~/components/molecules/TextImageSection";
 import ListSection from "~/components/molecules/ListSection";
 import EducationSection from "~/components/molecules/EducationSection";
@@ -47,15 +46,14 @@ export default {
   components: {
     Hero,
     Header,
-    Profile,
     Footer,
     TextImageSection,
     ListSection,
     EducationSection,
     TechSection,
     ProjectsSection,
-    ContactSection
-  }
+    ContactSection,
+  },
 };
 </script>
 

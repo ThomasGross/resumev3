@@ -49,13 +49,16 @@ export default {
   }
 
   .grid-button {
-    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
     background: rgba($color: green, $alpha: 0.2);
     pointer-events: all;
     cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
+    line-height: 30px;
   }
 }
 </style>

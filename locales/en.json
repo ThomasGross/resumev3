@@ -2,7 +2,7 @@
   "siteTitle": "Thomas Gross Rasmussen - Resume",
   "header": {
     "profile": "profile",
-    "work": "work experience",
+    "work": "work",
     "education": "education",
     "tech": "technologies",
     "projects": "projects",
@@ -75,7 +75,7 @@
     "title": "Projects"
   },
   "tech": {
-    "title": "Technologies",
+    "title": "Tech",
     "lang": "Language",
     "danish": "Danish",
     "english": "English"

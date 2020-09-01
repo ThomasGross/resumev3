@@ -8,12 +8,12 @@
     <div class="col-desk-1 col-tab-0"></div>
     <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
-        <h3 class="item__title">Kontainer.dk</h3>
+        <h3 class="item__title">Kontainer.com</h3>
         <div class="item__image-container">
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/kontainer2.png" alt />
           </div>
-          <a href="https://www.kontainer.dk"></a>
+          <a href="https://www.kontainer.com"></a>
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@ export default {
     transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     #{$hover} & {
-      opacity: 50%;
+      opacity: 0.5;
     }
   }
 }

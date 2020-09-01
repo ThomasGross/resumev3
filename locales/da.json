@@ -1,7 +1,7 @@
 {
   "header": {
     "profile": "profil",
-    "work": "ERHVERVSERFARING",
+    "work": "ERFARING",
     "education": "UDDANNELSE",
     "tech": "Teknologier",
     "projects": "PROJEKTER",
@@ -15,7 +15,7 @@
     "block": "<p> Jeg er en kreativ og detaljeorienteret front-end udvikler med erfaring indenfor back-end og design. Jeg har fokus på den visuelle del af webudvikling og holder af at være en del af den kreative process. </p> <p> Jeg er en problemløser, der elsker processen fra idé til færdigt produkt med en mission om altid at finde de bedste løsninger undervejs. </p> <p> Jeg er perfektionist indenfor mit fag og arbejder derfor altid på, at forbedre og optimere kvaliteten af mit arbejde. </p> <p> Ambitionen med min jobsøgning er, at finde en arbejdsplads der kan styrke min kompetenceudvikling og hvor at sociale arrangementer, humor og samarbejde er høj prioritet. </p>"
   },
   "work": {
-    "title": "ERHVERVSERFARING",
+    "title": "ERFARING",
     "job1": {
       "title": "Front-end udvikler",
       "year": "2017-2020",
