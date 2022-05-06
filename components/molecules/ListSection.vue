@@ -2,7 +2,21 @@
   <div class="list-section grid" id="work">
     <div class="col-desk-5 col-tab-0 col-mob-0" />
     <div class="col-desk-6 col-tab-8 col-mob-4">
-      <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("work.title") }}</h1>
+      <h1 data-aos="fade-right" data-aos-duration="500">
+        {{ $t("work.title") }}
+      </h1>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job0.title") }}
+            <span>{{ $t("work.job0.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job0.workplace") }}</span>
+          </h3>
+          <p>{{ $t("work.job0.description") }}</p>
+        </div>
+      </div>
       <div data-aos="fade-right" data-aos-duration="500" class="experience">
         <div class="experience__item">
           <h3 class="experience__item__title">
@@ -79,8 +93,8 @@ import DoodleLight from "assets/svg/doodle_light.svg";
 
 export default {
   components: {
-    SvgCoding,
-  },
+    SvgCoding
+  }
 };
 </script>
 

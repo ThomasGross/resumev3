@@ -16,17 +16,23 @@
   },
   "work": {
     "title": "ERFARING",
+    "job0": {
+      "title": "Front-end developer",
+      "year": "2020-2022",
+      "workplace": "Dwarf A/S",
+      "description": "Konsulent arbejde som front-end udvikler, på varierende projekter og virksomheder. Teknisk erfaring med Html, Css, Sass, Tailwind, Javascript, GSAP, Vue.js, React.js"
+    },
     "job1": {
       "title": "Front-end udvikler",
       "year": "2017-2020",
       "workplace": "Konform A/S",
-      "description": "Webudvikling - Konsulent arbejde som front-end udvikler, på varierende projekter og virksomheder. Teknisk erfaring med Html, Css, Sass, Javascript, Vue.js, React.js, jQuery, Php, Zend, Laravel, Wordpress, optimering og udvikling af inhouse CMS."
+      "description": "Konsulent arbejde som front-end udvikler, på varierende projekter og virksomheder. Teknisk erfaring med Html, Css, Sass, Javascript, Vue.js, React.js, jQuery, Php, Zend, Laravel, Wordpress, optimering og udvikling af inhouse CMS."
     },
     "job2": {
       "title": "Frontend udvikler (praktik)",
       "year": "2017",
       "workplace": "Konform A/S",
-      "description": "Webudvikling - Arbejde som front-end udvikler, på frivillig.dk. Teknisk erfaring med Html, Css, Sass, Javascript, jQuery, Php, Zend, optimering og udvikling af inhouse CMS."
+      "description": "Arbejde som front-end udvikler, på frivillig.dk. Teknisk erfaring med Html, Css, Sass, Javascript, jQuery, Php, Zend, optimering og udvikling af inhouse CMS."
     },
     "job3": {
       "title": "IT drift",
@@ -38,7 +44,7 @@
       "title": "Webudvikler (praktik)",
       "year": "2016",
       "workplace": "Koda",
-      "description": "Webudvikling - Udvikling af Kodas hjemmeside og CMS. Teknisk erfaring med Html, Css, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
+      "description": "Udvikling af Kodas hjemmeside og CMS. Teknisk erfaring med Html, Css, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
     },
     "job5": {
       "title": "Continuity",

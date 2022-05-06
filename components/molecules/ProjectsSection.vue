@@ -2,9 +2,59 @@
   <div class="projects grid" id="projects">
     <div class="col-desk-1 col-tab-0"></div>
     <div class="col-desk-11 col-tab-8 col-mob-4">
-      <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("projects.title") }}</h1>
+      <h1 data-aos="fade-right" data-aos-duration="500">
+        {{ $t("projects.title") }}
+      </h1>
     </div>
 
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Oplev app</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/oplev.png" alt />
+          </div>
+          <a href="https://apps.apple.com/dk/app/oplev/id1518556638"></a>
+        </div>
+      </div>
+    </div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Accord.dk</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/accord.png" alt />
+          </div>
+          <a href="https://accord.dk/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Scanomat.com</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/scanomat.png" alt />
+          </div>
+          <a href="https://Scanomat.com/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Tribetakeaway.com</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/tribe.png" alt />
+          </div>
+          <a href="https://app.tribetakeaway.com/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-desk-1 col-tab-0"></div>
     <div class="col-desk-1 col-tab-0"></div>
     <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
@@ -59,7 +109,7 @@
 import Parallax from "vue-parallax-js";
 
 export default {
-  components: {},
+  components: {}
 };
 </script>
 

@@ -17,6 +17,12 @@
   },
   "work": {
     "title": "WORK",
+    "job0": {
+      "title": "Front-end developer",
+      "year": "2020-2022",
+      "workplace": "Dwarf A/S",
+      "description": "Web development – Consultancy work as front-end developer on various projects and companies. Technical experience with Html, Css, Sass, Tailwind, Javascript, GSAP, Vue.js, React.js"
+    },
     "job1": {
       "title": "Front-end developer",
       "year": "2017-2020",
@@ -76,7 +82,7 @@
   },
   "tech": {
     "title": "Technologies",
-    "lang": "Language",
+    "lang": "Languages",
     "danish": "Danish",
     "english": "English"
   },
