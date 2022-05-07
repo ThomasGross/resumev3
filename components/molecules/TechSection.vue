@@ -20,15 +20,16 @@
       </h3>
       <h3>HTML</h3>
       <h3>CSS</h3>
-      <h3>SASS</h3>
+      <h3>SCSS</h3>
       <h3>Javascript</h3>
       <h3>PHP</h3>
+      <h3>Java</h3>
       <h3>Swift</h3>
-      <h3>C#</h3>
-      <h3>UML</h3>
       <h3>SQL</h3>
+      <h3>UML</h3>
       <h3>{{ $t("tech.danish") }}</h3>
       <h3>{{ $t("tech.english") }}</h3>
+      <h3>{{ $t("tech.german") }}</h3>
     </div>
     <div
       class="list__item col-desk-2 col-tab-4 col-mob-2"
@@ -43,12 +44,14 @@
       </h3>
       <h3>Vue</h3>
       <h3>Nuxt</h3>
-      <h3>Angular</h3>
       <h3>React</h3>
       <h3>Next</h3>
-      <h3>Laravel</h3>
-      <h3>Capacitor</h3>
       <h3>Tailwind</h3>
+      <h3>Capacitor</h3>
+      <h3>GSAP</h3>
+      <h3>Express</h3>
+      <h3>Laravel</h3>
+      <h3>jQuery</h3>
     </div>
     <div
       class="list__item col-desk-2 col-tab-4 col-mob-2"
@@ -64,7 +67,7 @@
       <h3>OS X</h3>
       <h3>GIT</h3>
       <h3>MongoDB</h3>
-      <h3>node.js</h3>
+      <h3>node</h3>
       <h3>npm</h3>
       <h3>yarn</h3>
       <h3>Umbraco</h3>
@@ -74,6 +77,7 @@
       <h3>Adobe Xd</h3>
       <h3>Sketch</h3>
       <h3>Jira</h3>
+      <h3>Zenhub</h3>
     </div>
   </div>
 </template>
@@ -82,7 +86,7 @@
 import Parallax from "vue-parallax-js";
 
 export default {
-  components: {}
+  components: {},
 };
 </script>
 

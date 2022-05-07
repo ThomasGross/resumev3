@@ -77,6 +77,18 @@
           <p>{{ $t("work.job5.description") }}</p>
         </div>
       </div>
+      <div data-aos="fade-right" data-aos-duration="500" class="experience">
+        <div class="experience__item">
+          <h3 class="experience__item__title">
+            {{ $t("work.job6.title") }}
+            <span>{{ $t("work.job6.year") }}</span>
+          </h3>
+          <h3>
+            <span>{{ $t("work.job6.workplace") }}</span>
+          </h3>
+          <p>{{ $t("work.job6.description") }}</p>
+        </div>
+      </div>
     </div>
     <!-- <div class="watermark col-desk-6 col-tab-8 col-mob-4">
       <SvgCoding />
@@ -93,8 +105,8 @@ import DoodleLight from "assets/svg/doodle_light.svg";
 
 export default {
   components: {
-    SvgCoding
-  }
+    SvgCoding,
+  },
 };
 </script>
 
