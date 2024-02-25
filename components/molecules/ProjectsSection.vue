@@ -7,14 +7,17 @@
       </h1>
     </div>
 
-
     <div class="col-desk-1 col-tab-0"></div>
     <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
         <h3 class="item__title">DanskHåndbold</h3>
         <div class="item__image-container">
           <div class="item__image-container__image">
-            <img class="img-responsive" src="~/assets/img/danskhaandbold.png" alt />
+            <img
+              class="img-responsive"
+              src="~/assets/img/danskhaandbold.png"
+              alt
+            />
           </div>
           <a target="_blank" href="https://danskhaandbold.dk/"></a>
         </div>
@@ -58,7 +61,6 @@
     </div>
     <div class="col-desk-1 col-tab-0"></div>
 
-
     <div class="col-desk-1 col-tab-0"></div>
     <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
@@ -67,7 +69,10 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/oplev.png" alt />
           </div>
-          <a target="_blank" href="https://apps.apple.com/dk/app/oplev/id1518556638"></a>
+          <a
+            target="_blank"
+            href="https://apps.apple.com/dk/app/oplev/id1518556638"
+          ></a>
         </div>
       </div>
     </div>
@@ -212,7 +217,6 @@ export default {
 
   &__title {
     font-weight: 300;
-    opacity: 80%;
     letter-spacing: normal;
     transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
