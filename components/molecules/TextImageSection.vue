@@ -15,7 +15,7 @@
     </div>
     <div class="col-desk-5 col-tab-8 col-mob-4">
       <div class="image-container">
-        <img class="image-container__image" src="~/assets/img/IMG_1582.jpg" />
+        <img class="image-container__image" src="~/assets/img/Me.jpg" />
       </div>
     </div>
   </div>
