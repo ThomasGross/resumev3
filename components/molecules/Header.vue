@@ -31,7 +31,7 @@
             <div class="link">{{ $t("header.work") }}</div>
           </a>
         </div>
-        <div class="nav-menu__item">
+        <!-- <div class="nav-menu__item">
           <a
             href="#"
             v-scroll-to="{
@@ -47,7 +47,7 @@
           <a href="#" v-scroll-to="{ el: '#tech', offset: -100, easing: 'ease-in-out' }">
             <div class="link">{{ $t("header.tech") }}</div>
           </a>
-        </div>
+        </div> -->
         <div class="nav-menu__item">
           <a
             href="#"

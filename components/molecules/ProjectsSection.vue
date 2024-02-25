@@ -7,6 +7,58 @@
       </h1>
     </div>
 
+
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">DanskHåndbold</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/danskhaandbold.png" alt />
+          </div>
+          <a target="_blank" href="https://danskhaandbold.dk/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Vestforbrændingen</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/vestfor.png" alt />
+          </div>
+          <a target="_blank" href="https://vestfor.dk/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-desk-1 col-tab-0"></div>
+
+    <div class="col-desk-1 col-tab-0"></div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">Designbase + others - Horisont gruppen</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/designbase.png" alt />
+          </div>
+          <a target="_blank" href="https://www.designbase.dk/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="item col-desk-5 col-tab-8 col-mob-4">
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h3 class="item__title">BIF + others - Divisionsforeningen</h3>
+        <div class="item__image-container">
+          <div class="item__image-container__image">
+            <img class="img-responsive" src="~/assets/img/divi.png" alt />
+          </div>
+          <a target="_blank" href="https://brondby.com/"></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-desk-1 col-tab-0"></div>
+
+
     <div class="col-desk-1 col-tab-0"></div>
     <div class="item col-desk-5 col-tab-8 col-mob-4">
       <div data-aos="fade-right" data-aos-duration="500">
@@ -15,7 +67,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/oplev.png" alt />
           </div>
-          <a href="https://apps.apple.com/dk/app/oplev/id1518556638"></a>
+          <a target="_blank" href="https://apps.apple.com/dk/app/oplev/id1518556638"></a>
         </div>
       </div>
     </div>
@@ -26,7 +78,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/accord.png" alt />
           </div>
-          <a href="https://accord.dk/"></a>
+          <a target="_blank" href="https://accord.dk/"></a>
         </div>
       </div>
     </div>
@@ -39,7 +91,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/scanomat.png" alt />
           </div>
-          <a href="https://Scanomat.com/"></a>
+          <a target="_blank" href="https://Scanomat.com/"></a>
         </div>
       </div>
     </div>
@@ -50,7 +102,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/tribe.png" alt />
           </div>
-          <a href="https://app.tribetakeaway.com/"></a>
+          <a target="_blank" href="https://app.tribetakeaway.com/"></a>
         </div>
       </div>
     </div>
@@ -63,7 +115,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/kontainer2.png" alt />
           </div>
-          <a href="https://www.kontainer.com"></a>
+          <a target="_blank" href="https://www.kontainer.com"></a>
         </div>
       </div>
     </div>
@@ -74,31 +126,7 @@
           <div class="item__image-container__image">
             <img class="img-responsive" src="~/assets/img/genbyg2.png" alt />
           </div>
-          <a href="https://www.genbyg.dk"></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-desk-1 col-tab-0"></div>
-    <div class="col-desk-1 col-tab-0"></div>
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <div data-aos="fade-right" data-aos-duration="500">
-        <h3 class="item__title">Frivillig.dk</h3>
-        <div class="item__image-container">
-          <div class="item__image-container__image">
-            <img class="img-responsive" src="~/assets/img/frivillig2.png" alt />
-          </div>
-          <a href="https://www.frivillig.dk"></a>
-        </div>
-      </div>
-    </div>
-    <div class="item col-desk-5 col-tab-8 col-mob-4">
-      <div data-aos="fade-right" data-aos-duration="500">
-        <h3 class="item__title">Learninginstitute.implement.dk</h3>
-        <div class="item__image-container">
-          <div class="item__image-container__image">
-            <img class="img-responsive" src="~/assets/img/implement.png" alt />
-          </div>
-          <a href="https://www.learninginstitute.implement.dk"></a>
+          <a target="_blank" href="https://www.genbyg.dk"></a>
         </div>
       </div>
     </div>
@@ -169,14 +197,23 @@ export default {
       padding-bottom: 56.25%;
       position: relative;
       height: 0;
+      border-radius: 15px;
 
       img {
         width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: top;
+        inset: 0;
       }
     }
   }
 
   &__title {
+    font-weight: 300;
+    opacity: 80%;
+    letter-spacing: normal;
     transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     #{$hover} & {

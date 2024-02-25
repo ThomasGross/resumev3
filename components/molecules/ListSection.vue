@@ -11,7 +11,7 @@
             {{ $t("work.job0.title") }}
             <span>{{ $t("work.job0.year") }}</span>
           </h3>
-          <h3>
+          <h3 class="experience__item__workspace">
             <span>{{ $t("work.job0.workplace") }}</span>
           </h3>
           <p>{{ $t("work.job0.description") }}</p>
@@ -23,7 +23,7 @@
             {{ $t("work.job1.title") }}
             <span>{{ $t("work.job1.year") }}</span>
           </h3>
-          <h3>
+          <h3 class="experience__item__workspace">
             <span>{{ $t("work.job1.workplace") }}</span>
           </h3>
           <p>{{ $t("work.job1.description") }}</p>
@@ -35,7 +35,7 @@
             {{ $t("work.job2.title") }}
             <span>{{ $t("work.job2.year") }}</span>
           </h3>
-          <h3>
+          <h3 class="experience__item__workspace">
             <span>{{ $t("work.job2.workplace") }}</span>
           </h3>
           <p>{{ $t("work.job2.description") }}</p>
@@ -47,7 +47,7 @@
             {{ $t("work.job3.title") }}
             <span>{{ $t("work.job3.year") }}</span>
           </h3>
-          <h3>
+          <h3 class="experience__item__workspace">
             <span>{{ $t("work.job3.workplace") }}</span>
           </h3>
           <p>{{ $t("work.job3.description") }}</p>
@@ -59,22 +59,10 @@
             {{ $t("work.job4.title") }}
             <span>{{ $t("work.job4.year") }}</span>
           </h3>
-          <h3>
+          <h3 class="experience__item__workspace">
             <span>{{ $t("work.job4.workplace") }}</span>
           </h3>
           <p>{{ $t("work.job4.description") }}</p>
-        </div>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="500" class="experience">
-        <div class="experience__item">
-          <h3 class="experience__item__title">
-            {{ $t("work.job5.title") }}
-            <span>{{ $t("work.job5.year") }}</span>
-          </h3>
-          <h3>
-            <span>{{ $t("work.job5.workplace") }}</span>
-          </h3>
-          <p>{{ $t("work.job5.description") }}</p>
         </div>
       </div>
     </div>
@@ -93,8 +81,8 @@ import DoodleLight from "assets/svg/doodle_light.svg";
 
 export default {
   components: {
-    SvgCoding
-  }
+    SvgCoding,
+  },
 };
 </script>
 
@@ -129,8 +117,17 @@ export default {
       }
 
       &__title {
+        font-weight: 500;
+        letter-spacing: normal;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      &__workspace {
+        letter-spacing: normal;
+        font-size: 12px;
+        font-weight: 400;
       }
     }
   }

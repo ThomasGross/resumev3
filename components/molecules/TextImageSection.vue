@@ -3,13 +3,19 @@
     <div class="col-desk-1 col-tab-0 col-mob-0" />
     <div class="col-desk-5 col-tab-8 col-mob-4">
       <div v-parallax.modifier="0">
-        <h1 data-aos="fade-right" data-aos-duration="500">{{ $t("profile.title") }}</h1>
-        <div data-aos="fade-right" data-aos-duration="500" v-html="$t('profile.block')"></div>
+        <h1 data-aos="fade-right" data-aos-duration="500">
+          {{ $t("profile.title") }}
+        </h1>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          v-html="$t('profile.block')"
+        ></div>
       </div>
     </div>
     <div class="col-desk-5 col-tab-8 col-mob-4">
       <div class="image-container">
-        <img class="image-container__image" src="~/assets/img/IMG_7137.jpg" />
+        <img class="image-container__image" src="~/assets/img/IMG_1582.jpg" />
       </div>
     </div>
   </div>
@@ -47,22 +53,17 @@ export default {
 
   .image-container {
     position: relative;
-    height: 100%;
     width: auto;
+    padding-top: 5 / 4 * 100%;
+    border-radius: 20px;
+    overflow: hidden;
 
     @include media($bp-tablet) {
       margin-top: 100px;
-      height: 0;
-      padding-top: 3 / 4 * 100%;
-      background: white;
-      position: relative;
-      width: $full-width;
-      left: $space;
     }
 
     @include media($bp-mobile) {
       margin-top: 30px;
-      padding-top: 4 / 5 * 100%;
     }
 
     &::before {
