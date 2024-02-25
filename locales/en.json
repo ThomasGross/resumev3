@@ -13,33 +13,33 @@
   },
   "profile": {
     "title": "profile",
-    "block": "<p>I am a creative and detail oriented front-end developer with experience within back-end and design. I focus on the visual part of web development and enjoy being part of the creative process.</p><p> I am a problem solver with a specific interest in the process from idea to the final product with a mission to always find the best solutions. </p> <p> I am a perfectionist and therefore always work to improve and optimize the quality of my work. </p><p> My ambition is to work with a company that is interested in strengthening the competences of its employees and that prioritizes social networking, humor and cooperation. </p>"
+    "block": "<p>I am a creative and detail oriented front-end developer with experience within back-end and design. I focus on the visual part of web development and enjoy being part of the creative process.</p><p> I am a problem solver with a specific interest in the process from idea to the final product with a mission to always find the best solutions. </p> <p> I am a perfectionist and therefore always work to improve and optimize the quality of my work. </p>"
   },
   "work": {
     "title": "WORK",
     "job0": {
       "title": "Front-end developer",
-      "year": "2020-2022",
+      "year": "2020-now",
       "workplace": "Dwarf A/S",
-      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, Css, Scss, Tailwind, Javascript, GSAP, Vue, React"
+      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, CSS, Tailwind, Javascript, GSAP, Vue, React, Nuxt.js, Next.js, Sanity, Shopify."
     },
     "job1": {
       "title": "Front-end developer",
       "year": "2020",
       "workplace": "Frankly A/S",
-      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, Css, Scss, Javascript, Vue"
+      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, CSS, ScSS, Javascript, Vue"
     },
     "job2": {
       "title": "Front-end developer",
       "year": "2017-2020",
       "workplace": "Konform A/S",
-      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, Css, Scss, Javascript, Vue, React, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
+      "description": "Consultancy work as front-end developer on various projects and companies. Technical experience with Html, CSS, ScSS, Javascript, Vue, React, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
     },
     "job3": {
       "title": "Front-end developer (trainee)",
       "year": "2017",
       "workplace": "Konform A/S",
-      "description": "Web development – work as front-end developer, on frivillig.dk Technical experience with Html, Css, Scss, Javascript, Vue, React, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
+      "description": "Web development – work as front-end developer, on frivillig.dk Technical experience with Html, CSS, ScSS, Javascript, Vue, React, jQuery, Php, Zend, Laravel, Wordpress, optimization and development of in-house CMS."
     },
     "job4": {
       "title": "IT maintenance",
@@ -51,7 +51,7 @@
       "title": "Web developer (trainee)",
       "year": "2016",
       "workplace": "Koda",
-      "description": "Web development, Development of Koda’s homepage and CMS. Technical experience with Html, Css, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
+      "description": "Web development, Development of Koda’s homepage and CMS. Technical experience with Html, CSS, Less, Javascript, jQuery, ASP.net, Umbraco, C#."
     },
     "job6": {
       "title": "Continuity",
@@ -84,7 +84,7 @@
     }
   },
   "projects": {
-    "title": "Projects"
+    "title": "Featured projects"
   },
   "tech": {
     "title": "Technologies",

@@ -12,12 +12,12 @@
     <div class="section">
       <list-section></list-section>
     </div>
-    <div class="section">
+    <!-- <div class="section">
       <education-section></education-section>
-    </div>
-    <div class="section">
+    </div> -->
+    <!-- <div class="section">
       <tech-section></tech-section>
-    </div>
+    </div> -->
     <div class="section">
       <projects-section></projects-section>
     </div>

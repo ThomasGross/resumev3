@@ -133,8 +133,8 @@ p {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: -1px;
   margin-bottom: 30px;
+  opacity: 0.8;
 
   @include media($bp-mobile) {
     font-size: 14px;
