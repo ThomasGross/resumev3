@@ -110,7 +110,7 @@ export default {
     transition: color 0.3s;
 
 
-    background: url("https://picsum.photos/2000") no-repeat
+    background: url("https://picsum.photos/4000") no-repeat
       50%;
 
     @include media($bp-tablet) {
